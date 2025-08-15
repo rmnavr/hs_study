@@ -2,7 +2,8 @@ Base monadic typeclasses:
 * Functor
 * Applicative
 * Monad
-* _Others: Alternative, MonadPlus, ..._
+* Arrow?
+* _Others: Alternative, MonadPlus, Comonad..._
 
 Monads Zoo:
 * IO
