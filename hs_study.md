@@ -1,5 +1,3 @@
-test
-
 # Yapping
 
 Why Haskell is good/bad:
