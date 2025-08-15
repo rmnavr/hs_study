@@ -25,9 +25,3 @@ Core packages and modules:
 - base, Prelude, System.IO
 - text, transformers, ...
 
-
-
-
-
-do-blocks (sugar)
-let in<img width="58" height="35" alt="image" src="https://github.com/user-attachments/assets/8f2c0cf7-233b-4407-897b-07fe6473d2d8" />
