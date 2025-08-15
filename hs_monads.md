@@ -15,6 +15,6 @@ Monads Zoo:
 
 Advanced:
 * Monad Transformers, mtl/transformers lib
-* Free monads
+* Free monads _(also: Church-encoded Monads)_
 * Final Tagless
 * Hierarchical Free Monads (popularized by Granin)
