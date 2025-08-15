@@ -12,6 +12,11 @@ Systematic bird-view on Haskell (mostly just TOC, no explanations):
 * **Meta-programming** — https://github.com/rmnavr/hs_study/blob/main/map/hs_meta.md
 
 ---
+
+Cheetsheets:
+* **Language extensions** — https://github.com/rmnavr/hs_study/blob/main/chsheet/lang_extensions.md
+
+---
   
 Study materials list (focus is more on software design rather than on math theory):
 * **Beginner/Intermediate** (focus is mostly on Haskell itself, not on Software Design) — https://github.com/rmnavr/hs_study/blob/main/hs_study.md
