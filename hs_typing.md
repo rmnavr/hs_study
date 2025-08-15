@@ -13,10 +13,16 @@ Prelude types:
 Basic ADT:
 - Product/Sum types
 - Records syntax (record gives accesor func + named field)
+- GADTs
 
 Advanced Typing:
-- GADTs
-- Higher-kinded types
-- Phantom types
-- ...
+* RankN types (higher-kinded types)
+* TypeFamilies
+* DataKinds
+* Linear types
+* Phantom types
+* Existential types
+* Dependent types (not really a 1st class citizen in Haskell)
+* Refinement types
+
 
