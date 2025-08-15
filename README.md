@@ -1,5 +1,8 @@
 Collections of materials for leraning Haskell.
 
+* Links inside this repo are [Normal text]()
+* Links to outer sources are [[→ Bracketed and arrowed]]()
+
 ---
 
 | Group | Link |
