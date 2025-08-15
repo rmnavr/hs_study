@@ -1,4 +1,4 @@
-Collection of study materials for Haskell (mostly beginner-intermediate, no advanced Architectural stuff and such).
+test
 
 # Yapping
 
