@@ -41,7 +41,7 @@ How to learn Haskell:
 
 # Collections of materials
 
-* **Software Design and Architecture in Haskell**, the most comprehensive list (by Alexander Granin) — https://github.com/graninas/software-design-in-haskell
+* **Software Design and Architecture in Haskell** (the most comprehensive list, by Alexander Granin) — https://github.com/graninas/software-design-in-haskell
 * **Author's website on learning Haskell** (by William Yaoh) — https://williamyaoh.com/
 * **Author's website on Haskell, Math and Algorithms** (by Adit) — https://www.adit.io/index.html
 * **Tips and tricks for production-level Haskell** (by Kowainik) — https://kowainik.github.io/tags/haskell
