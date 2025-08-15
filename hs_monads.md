@@ -2,7 +2,7 @@ Base monadic typeclasses:
 * Functor
 * Applicative
 * Monad
-* Others: Alternative, MonadPlus, ...
+* _Others: Alternative, MonadPlus, ..._
 
 Monads Zoo:
 * IO
@@ -10,10 +10,10 @@ Monads Zoo:
 * List
 * Either
 * RWS (Reader, Writer, State)
-* Others: Continuation, Lazy, ...
+* _Others: Continuation, Lazy, ..._
 
 Advanced:
-* Monad transformers, mtl/transformers lib
+* Monad Transformers, mtl/transformers lib
 * Free monads
 * Final Tagless
 * Hierarchical Free Monads (popularized by Granin)
