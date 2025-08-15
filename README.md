@@ -14,7 +14,7 @@ I poked in:
     * `article` **State monad** — https://williamyaoh.com/posts/2020-07-12-deriving-state-monad.html
     * `article` **Reader monad** — https://williamyaoh.com/posts/2020-07-19-deriving-reader-monad.html
     * `article` **Writer monad** — https://williamyaoh.com/posts/2020-07-26-deriving-writer-monad.html
-  * `article` **Monad transformers 101** — 
+  * `article` **Monad transformers 101** — https://williamyaoh.com/posts/2023-06-10-monad-transformers-101.html
 * by Kowainik
   * `article` **Basic patterns in Haskell** — https://kowainik.github.io/posts/haskell-mini-patterns
   * `article` **Style guide** — https://kowainik.github.io/posts/2019-02-06-style-guide
