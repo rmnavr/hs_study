@@ -26,5 +26,5 @@ Libs (or "Packages") are collections of:
 - executables and other stuff
 
 Core packages and modules:
-- base, Prelude, System.IO
-- text, transformers, ...
+- full list of packages coming with ghc install by default: https://downloads.haskell.org/ghc/latest/docs/users_guide/9.12.2-notes.html#included-libraries
+- **Prelude** is imported automatically and reimports mostly from **base** package (but from others too)
