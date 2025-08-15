@@ -7,8 +7,8 @@ Keywords for defining types:
 
 Prelude types:
 - Prelude basic types (Eq, Show, Int/Float/String, ...)
-- Monadic types (see also: https://github.com/rmnavr/hs_study/blob/main/hs_monads.md)
-- Traversables-family (see also: https://github.com/rmnavr/hs_study/blob/main/hs_traverse.md)
+- Monadic family (see also: https://github.com/rmnavr/hs_study/blob/main/hs_monads.md)
+- Monoid family (see also: https://github.com/rmnavr/hs_study/blob/main/hs_traverse.md)
 
 Basic ADT:
 - Product/Sum types
