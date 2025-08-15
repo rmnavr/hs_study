@@ -14,6 +14,9 @@ This is map of Haskell basic tooling (libs, compilers, etc.)
 * hackage
 * stackage
 * hoogle
+* haskell.org
+* wiki.haskell.org
+
 
 # Packaging
 
