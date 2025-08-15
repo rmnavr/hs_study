@@ -13,6 +13,7 @@ Haskell bird-view map:
   * **Monad-related map** — https://github.com/rmnavr/hs_study/blob/main/hs_monads.md
   * **Traversables** — https://github.com/rmnavr/hs_study/blob/main/hs_traverse.md
   * **Typing overview** (except monads and traversables which are in their separate maps) — https://github.com/rmnavr/hs_study/blob/main/hs_typing.md
+* **Meta-programming** — https://github.com/rmnavr/hs_study/blob/main/hs_meta.md
   
 Study materials list:
 * **Beginner/Intermediate** (focus is mostly on Haskell itself, not on Software Design) — https://github.com/rmnavr/hs_study/blob/main/hs_study.md
