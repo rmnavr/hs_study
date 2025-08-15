@@ -1,6 +1,17 @@
-# Beginner/Intermediate
+# Yapping
 
-I poked in:
+Why Haskell is good/bad:
+* **Glorifying Haskell safeness, refactorability and maintainability** — https://williamyaoh.com/posts/2019-11-30-how-does-haskell-make-life-easier.html
+* https://cdsmith.wordpress.com/2011/03/13/haskells-niche-hard-problems/
+
+How to learn Haskell:
+* https://williamyaoh.com/posts/2019-10-05-you-are-already-smart-enough.html
+* https://www.haskellforall.com/2017/10/advice-for-haskell-beginners.html
+* https://www.poberezkin.com/posts/2021-04-21-what-i-wish-somebody-told-me-when-i-was-learning-Haskell.html
+* https://bitemyapp.com/blog/meditations-on-learning-haskell/
+
+# Beginner/Intermediate study materials
+
 * `book` **Learn You a Haskell for Greater Good** — considered to be best introductory book for Haskell (despite goofy style)
 * `code` **Very basic haskell programs examples** — https://www.haskellforall.com/2015/10/basic-haskell-examples.html
 * `youtube` **JSON parser in 100 LOC** (thinking process exposition) — https://github.com/tsoding/haskell-json
@@ -19,36 +30,25 @@ I poked in:
   * `article` **Basic patterns in Haskell** — https://kowainik.github.io/posts/haskell-mini-patterns
   * `article` **Style guide** — https://kowainik.github.io/posts/2019-02-06-style-guide
 
-I heard, but didn't delve:
-* `article` **Haskell GoF patterns** — https://github.com/thma/LtuPatternFactory?tab=readme-ov-file#visitor--foldable
-
-# Yapping
-
-Articles on Haskell philosophy, learning, adoption, etc.
-* https://williamyaoh.com/posts/2019-10-05-you-are-already-smart-enough.html
-* https://williamyaoh.com/posts/2019-11-30-how-does-haskell-make-life-easier.html
-* https://cdsmith.wordpress.com/2011/03/13/haskells-niche-hard-problems/
-* https://www.haskellforall.com/2017/10/advice-for-haskell-beginners.html
-* https://www.poberezkin.com/posts/2021-04-21-what-i-wish-somebody-told-me-when-i-was-learning-Haskell.html
-* https://bitemyapp.com/blog/meditations-on-learning-haskell/
-
 # Books
 
-I tried:
-* LYAH (see above)
-* Haskell Design Patterns
-* What I wish I knew when learning Haskell
-* Functional Design and Architecture (Granin)
-
-I heard:
+* **LYAH** (see above)
+* **Haskell Design Patterns**
+* **What I wish I knew when learning Haskell**
+* **Functional Design and Architecture** (by Granin)
 * Haskell Programming from the first Principles
 * Real-world Haskell
 
-# Collections
+# Collections of materials
 
 * **Software Design and Architecture in Haskell**, the most comprehensive list (by Alexander Granin) — https://github.com/graninas/software-design-in-haskell
 * **Author's website on learning Haskell** (by William Yaoh) — https://williamyaoh.com/
 * **Author's website on Haskell, Math and Algorithms** (by Adit) — https://www.adit.io/index.html
 * **Tips and tricks for production-level Haskell** (by Kowainik) — https://kowainik.github.io/tags/haskell
 * **Accessible articles on Haskell on many topics** — https://www.haskellforall.com/
+
+# Other materials (require poking)
+
+I heard, but didn't delve:
+* `article` **Haskell GoF patterns** — https://github.com/thma/LtuPatternFactory?tab=readme-ov-file#visitor--foldable
 
