@@ -12,7 +12,8 @@ Monads Zoo:
 * RWS (Reader, Writer, State)
 * Others: Continuation, Lazy, ...
 
-Transformers:
+Advanced:
 * Monad transformers, mtl/transformers lib
+* Free monads
 * Final Tagless
 * Hierarchical Free Monads (popularized by Granin)
