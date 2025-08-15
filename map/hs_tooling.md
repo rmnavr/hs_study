@@ -2,8 +2,8 @@ This is map of Haskell basic tooling (libs, compilers, etc.)
 
 # Tooling
 
-* ghc (compiling, language extensions) — [ghc docs](https://downloads.haskell.org/ghc/latest/docs/users_guide/)
-* ghci (REPL) — [ghci docs](https://downloads.haskell.org/ghc/latest/docs/users_guide/ghci.html)
+* ghc (compiling, language extensions) — [[→ ghc docs]](https://downloads.haskell.org/ghc/latest/docs/users_guide/)
+* ghci (REPL) — [[→ ghci docs]](https://downloads.haskell.org/ghc/latest/docs/users_guide/ghci.html)
 * cabal and stack
 * on Windows: msys, mingw, compiler toolchain
 * ghc-pkg
@@ -24,5 +24,5 @@ Please clearly distinguish between:
 - **Module** — organized namespace with corresponding `*.hs` files 
 
 Core packages and modules:
-- Full list of packages coming with ghc install by default: [ghc docs](https://downloads.haskell.org/ghc/latest/docs/users_guide/9.12.2-notes.html#included-libraries)
+- Full list of packages coming with ghc install by default: [[→ ghc docs]](https://downloads.haskell.org/ghc/latest/docs/users_guide/9.12.2-notes.html#included-libraries)
 - **Prelude** is imported automatically and reimports mostly from **base** package (but from others too)
