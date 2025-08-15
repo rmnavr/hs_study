@@ -53,4 +53,5 @@ How to learn Haskell:
 
 I heard, but didn't delve:
 * `article` **Haskell GoF patterns** — https://github.com/thma/LtuPatternFactory?tab=readme-ov-file#visitor--foldable
+* `youtube` **Writing a simple interpreter** — https://www.youtube.com/watch?v=lDWTNVfsvbk
 
