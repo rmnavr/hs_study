@@ -5,4 +5,5 @@ Basic types:
 * Zippers?
 
 Advanced:
+* Free Monoid
 * Lenses
