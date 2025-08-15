@@ -2,23 +2,24 @@
 
 I poked in:
 * `book` **Learn You a Haskell for Greater Good** — considered to be best introductory book for Haskell (despite goofy style)
+* `code` **Very basic haskell programs examples** — https://www.haskellforall.com/2015/10/basic-haskell-examples.html
 * `youtube` **JSON parser in 100 LOC** (thinking process exposition) — https://github.com/tsoding/haskell-json
 * Haskell in Pictures (by Adit) — best material for visualizing monads and such:
   * `article` **Monads intro** — https://www.adit.io/posts/2013-04-17-functors,_applicatives,_and_monads_in_pictures.html
   * `article` **RWS monads** — https://www.adit.io/posts/2013-06-10-three-useful-monads.html
   * `article` **Lenses** — https://www.adit.io/posts/2013-07-22-lenses-in-pictures.htm
 * by William Yaoh:
- * `article` **Haskell study roadmap** — https://williamyaoh.com/posts/2020-01-11-road-to-proficient.html
- * RWS series (deriving some monads from 1st principles) — good excercises and examples:
- * `article` **State monad** — https://williamyaoh.com/posts/2020-07-12-deriving-state-monad.html
- * `article` **Reader monad** — https://williamyaoh.com/posts/2020-07-19-deriving-reader-monad.html
- * `article` **Writer monad** — https://williamyaoh.com/posts/2020-07-26-deriving-writer-monad.html
+  * `article` **Haskell study roadmap** — https://williamyaoh.com/posts/2020-01-11-road-to-proficient.html
+  * RWS series (deriving some monads from 1st principles) — good excercises and examples:
+  * `article` **State monad** — https://williamyaoh.com/posts/2020-07-12-deriving-state-monad.html
+  * `article` **Reader monad** — https://williamyaoh.com/posts/2020-07-19-deriving-reader-monad.html
+  * `article` **Writer monad** — https://williamyaoh.com/posts/2020-07-26-deriving-writer-monad.html
 * by Kowainik
- * `article` **Basic patterns in Haskell** — https://kowainik.github.io/posts/haskell-mini-patterns
- * `article` **Style guide** — https://kowainik.github.io/posts/2019-02-06-style-guide
+  * `article` **Basic patterns in Haskell** — https://kowainik.github.io/posts/haskell-mini-patterns
+  * `article` **Style guide** — https://kowainik.github.io/posts/2019-02-06-style-guide
 
 I heard, but didn't delve:
-* https://github.com/thma/LtuPatternFactory?tab=readme-ov-file#visitor--foldable
+* `article` **Haskell GoF patterns** — https://github.com/thma/LtuPatternFactory?tab=readme-ov-file#visitor--foldable
 
 # Yapping
 
