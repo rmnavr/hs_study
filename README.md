@@ -11,4 +11,5 @@ Haskell bird-view map:
 * **Typing map** — https://github.com/rmnavr/hs_study/blob/main/hs_typing.md
 
 Study materials list:
-* **Study list** — https://github.com/rmnavr/hs_study/blob/main/hs_study.md
+* **Beginner/Intermediate** (focus is mostly on Haskell itself, not on Software Design) — https://github.com/rmnavr/hs_study/blob/main/hs_study.md
+* **Advanced/Architectural** (but minding that Software Design is somewhat language-agnostic) — TO BE DONE
