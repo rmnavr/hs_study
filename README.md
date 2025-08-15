@@ -11,9 +11,10 @@ I poked in:
 * by William Yaoh:
   * `article` **Haskell study roadmap** — https://williamyaoh.com/posts/2020-01-11-road-to-proficient.html
   * RWS series (deriving some monads from 1st principles) — good excercises and examples:
-  * `article` **State monad** — https://williamyaoh.com/posts/2020-07-12-deriving-state-monad.html
-  * `article` **Reader monad** — https://williamyaoh.com/posts/2020-07-19-deriving-reader-monad.html
-  * `article` **Writer monad** — https://williamyaoh.com/posts/2020-07-26-deriving-writer-monad.html
+    * `article` **State monad** — https://williamyaoh.com/posts/2020-07-12-deriving-state-monad.html
+    * `article` **Reader monad** — https://williamyaoh.com/posts/2020-07-19-deriving-reader-monad.html
+    * `article` **Writer monad** — https://williamyaoh.com/posts/2020-07-26-deriving-writer-monad.html
+  * `article` **Monad transformers 101** — 
 * by Kowainik
   * `article` **Basic patterns in Haskell** — https://kowainik.github.io/posts/haskell-mini-patterns
   * `article` **Style guide** — https://kowainik.github.io/posts/2019-02-06-style-guide
@@ -23,6 +24,13 @@ I heard, but didn't delve:
 
 # Yapping
 
+Articles on Haskell philosophy, learning, adoption, etc.
+* https://williamyaoh.com/posts/2019-10-05-you-are-already-smart-enough.html
+* https://williamyaoh.com/posts/2019-11-30-how-does-haskell-make-life-easier.html
+* https://cdsmith.wordpress.com/2011/03/13/haskells-niche-hard-problems/
+* https://www.haskellforall.com/2017/10/advice-for-haskell-beginners.html
+* https://www.poberezkin.com/posts/2021-04-21-what-i-wish-somebody-told-me-when-i-was-learning-Haskell.html
+* https://bitemyapp.com/blog/meditations-on-learning-haskell/
 
 # Books
 
@@ -42,4 +50,5 @@ I heard:
 * **Author's website on learning Haskell** (by William Yaoh) — https://williamyaoh.com/
 * **Author's website on Haskell, Math and Algorithms** (by Adit) — https://www.adit.io/index.html
 * **Tips and tricks for production-level Haskell** (by Kowainik) — https://kowainik.github.io/tags/haskell
+* **Accessible articles on Haskell on many topics** — https://www.haskellforall.com/
 
