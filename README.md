@@ -4,6 +4,8 @@ Focus here is on 2 things:
 * give systematic view on Haskell
 * focus on software design and pragmatism, rather than math and abstractions
 
+---
+
 Haskell bird-view map:
 * **Haskell's toolchain (compile, REPL, etc.)** — https://github.com/rmnavr/hs_study/blob/main/hs_tooling.md
 * **Basic language syntax and constructs** — https://github.com/rmnavr/hs_study/blob/main/hs_basesyntax.md
