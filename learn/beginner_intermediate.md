@@ -26,11 +26,11 @@
 * `free` [[→ Learn You a Haskell for Greater Good]](https://learnyouahaskell.github.io/)
   — considered to be best introductory book for Haskell (despite goofy style), although some say it doesn't give well-enough systematic view on Haskell
 * `free` [[→ Haskell on wikibooks]](https://en.wikibooks.org/wiki/Haskell)
+* `free` [[→ What I wish I knew when learning Haskell]](https://github.com/sdiehl/wiwinwlh)
+* `free` [[→ Real-world Haskell]](https://book.realworldhaskell.org/)
 * **Haskell Design Patterns**
-* **What I wish I knew when learning Haskell**
 * **Functional Design and Architecture** (by Granin)
 * Haskell Programming from the first Principles
-* Real-world Haskell
 
 # Collections of materials
 
@@ -40,6 +40,10 @@
 * [[→ Kowainik: tips and tricks for production-level Haskell]](https://kowainik.github.io/tags/haskell)
 * [[→ Haskellforall: accessible articles on Haskell on many topics]](https://www.haskellforall.com/)
 * [[→ Serokell: articles mostly on production Haskell]](https://serokell.io/blog/haskell)
+* Wiki Haskell: list of tutorials
+  * https://wiki.haskell.org/Meta-tutorial
+  * https://wiki.haskell.org/Learning_Haskell
+
 
 # Other materials (require poking)
 
