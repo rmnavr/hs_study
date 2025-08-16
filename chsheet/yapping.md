@@ -28,7 +28,9 @@ Other:
 <!-- __________________________________________________________________________/ }}}1 -->
 <!-- what i wish somebody told me ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾\ {{{1 -->
 
-# Key takeaways from [[→ What I wish somebody told me when I was learning Haskell]](https://www.poberezkin.com/posts/2021-04-21-what-i-wish-somebody-told-me-when-i-was-learning-Haskell.html)
+# Key takeaways from article
+
+> from: [[→ What I wish somebody told me when I was learning Haskell]](https://www.poberezkin.com/posts/2021-04-21-what-i-wish-somebody-told-me-when-i-was-learning-Haskell.html)
 
 * Haskell is **type-centric**, not **function-centric**
 * Think with correct terms:
