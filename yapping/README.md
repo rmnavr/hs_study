@@ -10,7 +10,7 @@ How to learn Haskell:
 * [[→ You are already smart enough to learn Haskell]](https://williamyaoh.com/posts/2019-10-05-you-are-already-smart-enough.html)
   — you can write usefull Haskell programs with just ADTs and IO
 * [[→ Advice for Haskell beginners]](https://www.haskellforall.com/2017/10/advice-for-haskell-beginners.html)
-  — learn Haskell with right expectations and reasons (it is pleasant language, but will not give you nirvana)
+  — learn Haskell with right expectations and reasons (it is pleasant language, but will not give you Nirvana)
 * [[→ Meditations on learning Haskell]](https://bitemyapp.com/blog/meditations-on-learning-haskell/)
   — about Haskell having good power-to-weight ratio
 
