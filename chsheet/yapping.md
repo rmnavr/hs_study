@@ -3,7 +3,7 @@
 
 # What I (rmnavr) personally like about Haskell
 
-Language:
+As a language:
 * compiled, only ~ x3 times slower than C
 * REPL
 * staticly/strictly typed
@@ -12,18 +12,18 @@ Language:
 * encourages some good practives (IO, separation of concerns)
 * nice syntax: ML-like, pointfree possibility, composability (curry by default)
 
-Software design:
-* functional architecture SOA (ft, (fm()
+You can learn Software design through Haskell:
+* functional architecture SOA (ft, hfm, ...)
+* exposes you to linux compiling toolchain (and to how OS works)
 
 As a tool:
+* overall a pleasant language to use
 * great at refactoring, making fundamental changes to codebase, getting back to after 3 years of pause
-* promissed at high level: /10 LOC, x10 productivity (ok, not really, but hey)
+* compared to other languages: less LOC (but more terse code), probably more productivity (but don't make unrealistic expectations)
 * SOA for parsers, DSLs, backends, etc.
 
 Other:
 * hard but rewarding intellectual challenge
-* good on resume (in fp-like places)
-* exposes you to linux compiling toolchain (and to how OS works)
 
 <!-- __________________________________________________________________________/ }}}1 -->
 <!-- what i wish somebody told me ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾\ {{{1 -->
@@ -32,7 +32,7 @@ Other:
 
 * Haskell is **type-centric**, not **function-centric**
 * Think with correct terms:
-  * IO is recipe, not an action (functions with IO are still pure)
+  * IO is a recipe, not an action (functions with IO are still pure)
   * Functions are NOT **called/executed**, they are **applied/evaluated**
   * Functions do not **return** values, they are a **binding of function code to the function name**
   * Names are not **variables**, and they are not **assigned**, they are **bound to values**.
