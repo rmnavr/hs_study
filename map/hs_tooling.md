@@ -21,6 +21,7 @@ This is map of Haskell basic tooling (libs, compilers, etc.)
 * haskell.org
 * wiki.haskell.org
 
+
 # Packaging
 
 Please clearly distinguish between:
