@@ -30,7 +30,7 @@
 * `free` [[→ Real-world Haskell]](https://book.realworldhaskell.org/)
 * **Haskell Design Patterns**
 * **Functional Design and Architecture** (by Granin)
-* Haskell Programming from the first Principles
+* **Haskell Programming from the first Principles**
 
 # Collections of materials
 

@@ -1,4 +1,4 @@
-Collections of materials for leraning Haskell.
+Collections of materials for learning Haskell.
 
 * Links to destinations inside this repo are in [Normal text]()
 * Links to outer sources are [[→ Bracketed and arrowed]]()
