@@ -1,16 +1,3 @@
-* `youtube` **JSON parser in 100 LOC** (thinking process exposition) — https://github.com/tsoding/haskell-json (TODO: move to code examples)
-
-# Yapping
-
-Why Haskell is good/bad:
-* [[→ How does Haskell make life easier]](https://williamyaoh.com/posts/2019-11-30-how-does-haskell-make-life-easier.html) — glorifying Haskell safeness, refactorability and maintainability
-* [[→ Haskells niche is hard problems]](https://cdsmith.wordpress.com/2011/03/13/haskells-niche-hard-problems/)
-
-How to learn Haskell:
-* [[→ You are already smart enough to learn Haskell]](https://williamyaoh.com/posts/2019-10-05-you-are-already-smart-enough.html)
-* [[→ Advice for Haskell beginners]](https://www.haskellforall.com/2017/10/advice-for-haskell-beginners.html)
-* [[→ What I with somebody told me when I was learning Haskell]](https://www.poberezkin.com/posts/2021-04-21-what-i-wish-somebody-told-me-when-i-was-learning-Haskell.html)
-* [[→ Meditations on learning Haskell]](https://bitemyapp.com/blog/meditations-on-learning-haskell/)
 
 # Beginner/Intermediate study materials
 

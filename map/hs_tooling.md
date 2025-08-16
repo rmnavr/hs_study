@@ -2,12 +2,16 @@ This is map of Haskell basic tooling (libs, compilers, etc.)
 
 # Tooling
 
-* ghc (compiling, language extensions) — [[→ ghc docs]](https://downloads.haskell.org/ghc/latest/docs/users_guide/)
+* ghc (compiling) — [[→ ghc docs]](https://downloads.haskell.org/ghc/latest/docs/users_guide/)
 * ghci (REPL) — [[→ ghci docs]](https://downloads.haskell.org/ghc/latest/docs/users_guide/ghci.html)
 * cabal and stack
 * on Windows: msys, mingw, compiler toolchain
-* ghc-pkg
-* *ghcup*
+* *Others: ghc-pkg, ghcup*
+
+# Related themes
+
+* language extensions
+* debugging instruments (you can't just "print x" anywhere in code)
 
 # Websites
 
