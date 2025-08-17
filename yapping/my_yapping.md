@@ -7,7 +7,8 @@ As a language:
 * only ~ x3 times slower than C (Haskell is compiled)
 * has REPL
 * staticly/strictly typed
-* SOA funtional language (+pure, +immuts)
+* SOA funtional language (+pure, +immuts) 
+  > SOA = State-of-the-Art
 * SOA typing system (second only to Idris/Agda and such)
 * encourages some good practives (IO, separation of concerns)
 * nice syntax: ML-like, pointfree possibility, composability (curry by default)
