@@ -4,7 +4,11 @@
 
 * [[→ Haskell learning roadmap upto Intermediate (by William Yao)]](https://williamyaoh.com/posts/2020-01-11-road-to-proficient.html)
 * [[→ Haskell competency matrix (by Granin)]](https://gist.github.com/graninas/833a9ff306338aefec7e543100c16ea1)
+* [[→ Haskell backend developer roadmap]](https://github.com/fullstack-development/developers-roadmap/tree/English-version-roadmap/backend)
+  — very detailed topics for levels: Junior 1, Junior 2, Junior 3, Intermediate 1
 * [[→ Haskell on wikibooks]](https://en.wikibooks.org/wiki/Haskell) — TOC itself is a great roadmap
+* [[→ Text-mode games as first Haskell project]](http://jackkelly.name/blog/archives/2022/05/28/text-mode_games_as_first_haskell_projects/index.html)
+  — using one scalable (to where your interest leads) project to goof in Haskell
 
 ## Books
 
@@ -14,8 +18,8 @@
 * `free` [[→ What I wish I knew when learning Haskell]](https://github.com/sdiehl/wiwinwlh)
 * `free` [[→ Real-world Haskell]](https://book.realworldhaskell.org/)
 * **Haskell Design Patterns**
-* **Functional Design and Architecture** (by Granin)
 * **Haskell Programming from the first Principles**
+* **Functional Design and Architecture** (by Granin)
 
 ## Various author's collections
 
@@ -25,7 +29,7 @@
 * [[→ Kowainik: tips and tricks for production-level Haskell]](https://kowainik.github.io/tags/haskell)
 * [[→ Haskellforall: accessible articles on Haskell on many topics]](https://www.haskellforall.com/)
 * [[→ Serokell: articles mostly on production Haskell]](https://serokell.io/blog/haskell)
-* Wiki Haskell: list of tutorials
+* Wiki Haskell: lists of tutorials
   * https://wiki.haskell.org/Meta-tutorial
   * https://wiki.haskell.org/Learning_Haskell
 

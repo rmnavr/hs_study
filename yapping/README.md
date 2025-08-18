@@ -1,3 +1,11 @@
+# My (rmnavr) yappings
+
+* [How I actually learned Haskell](https://github.com/rmnavr/hs_study/blob/main/yapping/how_i_learned_hs.md)
+* [My reasons to learn/use Haskell](https://github.com/rmnavr/hs_study/blob/main/yapping/why_hs.md)
+* [Takeaways from yapping articles](https://github.com/rmnavr/hs_study/blob/main/yapping/consp.md)
+
+# Articles
+
 Why Haskell is good/bad:
 * [[→ How does Haskell make life easier]](https://williamyaoh.com/posts/2019-11-30-how-does-haskell-make-life-easier.html)
   — on Haskell safeness, refactorability and maintainability
@@ -14,7 +22,5 @@ How to learn Haskell:
 * [[→ Meditations on learning Haskell]](https://bitemyapp.com/blog/meditations-on-learning-haskell/)
   — about Haskell having good power-to-weight ratio
 
-My key takeaways on Haskell philosophy and things like that:
-* [rmnavr yapping](https://github.com/rmnavr/hs_study/blob/main/yapping/my_yapping.md)
 
 

@@ -1,7 +1,6 @@
 
-    -- ==[ Definitions of Monad-related typeclasses in GHC  ]== --
-    --   (via :browse, when nothing except Prelude is loaded)
-
+    -- Definitions of Monad-related typeclasses in GHC
+    -- (as given via :browse in ghci, when nothing except Prelude is loaded)
 
     class Functor entity where
         fmap :: (a -> b) -> entity a -> entity b

@@ -1,5 +1,5 @@
 Existing:
-* [GHC definitions of Monad-related typeclasses](https://github.com/rmnavr/hs_study/blob/main/chsheet/monad_tc_defs.md)
+* [GHC definitions of Monad-related typeclasses](https://github.com/rmnavr/hs_study/blob/main/chsheet/monad_tc_defs.hs)
 * [Language extensions](https://github.com/rmnavr/hs_study/blob/main/chsheet/lang_extensions.md)
 
 Planned:
