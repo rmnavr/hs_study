@@ -8,7 +8,7 @@
   — very detailed topics for levels: Junior 1, Junior 2, Junior 3, Intermediate 1
 * [[→ Haskell on wikibooks]](https://en.wikibooks.org/wiki/Haskell) — TOC itself is a great roadmap
 * [[→ Text-mode games as first Haskell project]](http://jackkelly.name/blog/archives/2022/05/28/text-mode_games_as_first_haskell_projects/index.html)
-  — using one scalable (to where your interest leads) project to goof in Haskell
+  — using one scalable (to where your interest leads) project to goof in Haskell, good advice on how to feel which patterns solve which problems
 
 ## Books
 

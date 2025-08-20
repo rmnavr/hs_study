@@ -1,9 +1,3 @@
-# My (rmnavr) yappings
-
-* [How I actually learned Haskell](https://github.com/rmnavr/hs_study/blob/main/yapping/how_i_learned_hs.md)
-* [My reasons to learn/use Haskell](https://github.com/rmnavr/hs_study/blob/main/yapping/why_hs.md)
-* [Takeaways from yapping articles](https://github.com/rmnavr/hs_study/blob/main/yapping/consp.md)
-
 # Articles
 
 Why Haskell is good/bad:
