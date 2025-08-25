@@ -2,6 +2,15 @@
     -- Definitions of Monad-related typeclasses in GHC
     -- (as given via :browse in ghci, when nothing except Prelude is loaded)
 
+
+-- Functor/Applicative/Monad ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾\ {{{1
+
+    -- Main methods and their rough correspondence to each other: 
+    -- 
+    -- Functor:         <$     | fmap (<$>)    |     |     |        |
+    -- Applicative:     pure   | liftA, liftA* | <*> |     | *>, <* |
+    -- Monad:           return | liftM, liftM* | ap  | >>= | >>     | <=<, >=>
+
     class Functor entity where
         fmap :: (a -> b) -> entity a -> entity b
         (<$) :: a -> entity b -> entity a
@@ -25,6 +34,9 @@
     --  • import Control.Monad (ap)   
     --  • import Control.Monad (<=<, >=>)   
 
+-- ____________________________________________________________________________/ }}}1
+-- Alternative/MonadPlus ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾\ {{{1
+
     -- present in Control.Monad and Control.Alternative:
     class Applicative f => GHC.Base.Alternative f where
         GHC.Base.empty :: f a
@@ -38,7 +50,9 @@
         GHC.Base.mzero :: m a
         GHC.Base.mplus :: m a -> m a -> m a
 
--- Functor laws ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾\ {{{1
+-- ____________________________________________________________________________/ }}}1
+
+-- Laws: Functor ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾\ {{{1
 
     -- law of composition:
     fmap ((^2) . (*2)) (Just 7) == ((fmap (^2)) . (fmap (*2)) $ (Just 7))
