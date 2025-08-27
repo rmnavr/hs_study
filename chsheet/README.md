@@ -1,8 +1,8 @@
 Existing:
 * [GHC definitions of Monad-related typeclasses](https://github.com/rmnavr/hs_study/blob/main/chsheet/monad_tc_defs.hs)
 * [Packaging](https://github.com/rmnavr/hs_study/blob/main/chsheet/packaging.md)
-* [Language extensions](https://github.com/rmnavr/hs_study/blob/main/chsheet/lang_extensions.md)
-* [Lenses usage example (using microlens)](https://github.com/rmnavr/hs_study/blob/main/chsheet/microlens_ch.md)
+* [Language extensions](https://github.com/rmnavr/hs_study/blob/main/chsheet/lang_extensions.hs)
+* [Lenses usage example (using microlens)](https://github.com/rmnavr/hs_study/blob/main/chsheet/microlens_ch.hs)
 
 Planned:
 * **Compiling (on Windows)** — *TO BE DONE*
