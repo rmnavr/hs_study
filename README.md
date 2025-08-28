@@ -8,7 +8,7 @@ Collections of materials for learning Haskell.
 # My materials
 
 * [Haskell map (bird-view)](https://github.com/rmnavr/hs_study/blob/main/materials/hs_map.md)
-* [My de-facto roadmap of learning Haskell](https://github.com/rmnavr/hs_study/blob/main/materials/hs_roadmap.md) 
+* [My de-facto roadmap of learning Haskell](https://github.com/rmnavr/hs_study/blob/main/materials/my_hs_roadmap.md) 
 * [My reasons to learn/use Haskell](https://github.com/rmnavr/hs_study/blob/main/materials/why_hs.md) 
 * [Takeaways from yapping articles](https://github.com/rmnavr/hs_study/blob/main/materials/articles_consp.md)
 
