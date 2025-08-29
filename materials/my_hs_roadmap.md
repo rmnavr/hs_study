@@ -5,8 +5,8 @@ This roadmap focuses on well-established software design approaches and delibere
 
 General recommendations:
 * Focus more on HOW TO USE complex patterns (monads/functors/lens/etc.), not on THEIR INTERNALS (you can always learn internals later)
-* Category theory is not needed (nor will it help too much) to finish all 3 steps
-* GPT-5-mini knows Haskell well enough to be helpfull on all 3 steps (both for language and for tooling)
+* Category theory is not needed (nor will it help too much) to finish this roadmap
+* GPT-5-mini knows Haskell well enough to be helpfull on whole roadmap (both for language and for tooling)
 * For Monad, following definition is enough to work with it:
   **Monad in Haskell is a typeclass (typeclass is smth like interface), and in software design Monad is a pattern for composing computations**
 
@@ -14,11 +14,11 @@ General recommendations:
 
 Roughly, this roadmap can be summarized in 3 steps:
 
-|#  |Language|Tooling|
+|   |Language|Tooling|
 |---|---|---|
-|1  | Pure functions + ADTs and Simple Monads (Maybe, IO)	| just plane ghci is enough					|
-|2  | Monad stacks (transformers)							| try cabal/stack proj with dependencies	|
-|3  | Free monad DSLs (FT, HFM, Other) + GADTs				| try GUI application						|
+|Step 1| Pure functions + ADTs and Simple Monads (Maybe, IO)		| just plane ghci is enough					|
+|Step 2| Monad stacks (transformers) (+ probably learn Lens here)	| try cabal/stack proj with dependencies	|
+|Step 3| Free monad DSLs (FT, HFM, Other) + GADTs					| try GUI application						|
 
 By the end of each step I encourage you to build small toy app ~300 LOC with architecture built around learned topics.
 
