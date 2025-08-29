@@ -24,9 +24,11 @@ By the end of each step I encourage you to build small toy app ~300 LOC with arc
 
 # Language roadmap
 
+Ideally following topics should be somewhat familiar to you before starting: pure functions and effects, immutables, higher-order functions.
+
 Step 1:
-1. Get some experience (in any language) with: Pure functions, Immutables, Higher-order functions
-2. Basic syntax (if-then-else, `.` and `$`, patter matching, case-of, let-in, where, guards, signatures, import, list comprehensions)
+1. Haskell basic syntax (if-then-else, `.` and `$`, patter matching, case-of, let-in, where, guards, signatures, import, list comprehensions)
+2. Haskell principles: lazyness, curry-by-default (not too important, but know it's there)
 3. ADTs: product and sum types
 4. Typeclasses
 5. Base monad usage (Functor/Applicative/Monad theory, do-notation, using IO/Maybe monads)
