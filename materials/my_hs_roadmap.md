@@ -16,9 +16,9 @@ Roughly, this roadmap can be summarized in 3 steps:
 
 |   |Language|Tooling|
 |---|---|---|
-|Step 1| Pure functions + ADTs and Simple Monads (Maybe, IO)		| just plane ghci is enough					|
-|Step 2| Monad stacks (transformers) (+ probably learn Lens here)	| try cabal/stack proj with dependencies	|
-|Step 3| Free monad DSLs (FT, HFM, Other) + GADTs					| try GUI application						|
+|Step 1| Pure functions + ADTs and Simple Monads (Maybe, IO)	| just plane ghci is enough					|
+|Step 2| Monad stacks/transformers (+ also learn Lens here)		| try cabal/stack proj with dependencies	|
+|Step 3| Free monad DSLs (FT, HFM, Other) + GADTs				| try GUI application						|
 
 By the end of each step I encourage you to build small toy app ~300 LOC with architecture built around learned topics.
 
