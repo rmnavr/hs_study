@@ -1,14 +1,9 @@
+
 # Description
 
-Finishing this roadmap should make you feel confident in how to write 10000+ LOC general-purpose apps in Haskell.
-This roadmap focuses on well-established software design approaches and deliberetly ignores esoteric Haskell side.
+This roadmap focuses on learning well-established software design approaches and deliberetly ignores esoteric Haskell side.
 
-General recommendations:
-* Focus more on HOW TO USE complex patterns (monads/functors/lens/etc.), not on THEIR INTERNALS (you can always learn internals later)
-* Category theory is not needed (nor will it help too much) to finish this roadmap
-* GPT-5-mini knows Haskell well enough to be helpfull on whole roadmap (both for language and for tooling)
-* For Monad, following definition is enough to work with it:
-  **Monad in Haskell is a typeclass (typeclass is smth like interface), and in software design Monad is a pattern for composing computations**
+Finishing this roadmap should make you feel confident in how to write 10000+ LOC general-purpose apps in Haskell.
 
 # Bird-view on whole roadmap
 
@@ -16,23 +11,30 @@ Roughly, this roadmap can be summarized in 3 steps:
 
 |   |Language|Tooling|
 |---|---|---|
-|Step 1| Pure functions + ADTs and Simple Monads (Maybe, IO)	| just plane ghci is enough					|
-|Step 2| Monad stacks/transformers (+ also learn Lens here)		| try cabal/stack proj with dependencies	|
-|Step 3| Free monad DSLs (FT, HFM, Other) + GADTs				| try GUI application						|
+|Step 1| Pure functions + ADTs and Simple Monads (Maybe, IO)	| just plane ghci is enough				|
+|Step 2| Monad stacks/transformers (+ also learn Lens here)		| cabal/stack proj with dependencies	|
+|Step 3| Free monad DSLs (FT, HFM, Other) + GADTs				| maybe try building GUI application	|
 
-By the end of each step I encourage you to build small toy app ~300 LOC with architecture built around learned topics.
+By the end of each step write small toy app ~300 LOC with architecture built around learned topics.
 
 # Language roadmap
 
-Ideally following topics should be somewhat familiar to you before starting: pure functions and effects, immutables, higher-order functions.
+> Some advice:
+> * Focus more on HOW TO USE complex patterns (monads/functors/lens/etc.), not on THEIR INTERNALS (you can always learn internals later)
+> * Category theory is not needed (nor will it help too much) to finish this roadmap
+> * For Monad, following definition is enough to work with it:
+>   **Monad in Haskell is a typeclass (typeclass is smth like interface), and in software design Monad is a pattern for composing computations**
+> * Skipping steps will probably not work, be patient
+
+Ideally you should be familiar with **pure functions and effects**, **immutables** and **higher-order functions** before starting.
 
 Step 1:
 1. Haskell basic syntax (if-then-else, `.` and `$`, patter matching, case-of, let-in, where, guards, signatures, import, list comprehensions)
-2. Haskell principles: lazyness, curry-by-default (not too important, but know it's there)
+2. Some Haskell principles: lazyness, curry-by-default (just be aware of them)
 3. ADTs: product and sum types
 4. Typeclasses
 5. Base monad usage (Functor/Applicative/Monad theory, do-notation, using IO/Maybe monads)
-6. Language extensions (just be aware that they exist and how to activate them)
+6. Language extensions (just be aware that they exist and know how to activate them)
 7. Explore Prelude content (:browse Prelude)
 
 Step 2:
@@ -49,38 +51,41 @@ Step 3:
 Somewhere in parallel:
 * `beginner` Monoids — see how Lists, Strings and numbers can be Monoids 
 * `intermed` Lens — buffed setters and getters (I recommend trying `microlens` lib — see how to index/set/get values in structures like [[1,2,3],[4,5,6]])
-* `advanced` Type families, Rank-N types, Kigher kinded types
+* `advanced` Type families, Rank-N types, Higher kinded types
 
 Sources:
-* Learn you a Haskell for Greater Good — teaches you everything upto and including monads
+* Learn you a Haskell for Greater Good — teaches you everything upto monads
 * fsharpforfunandprofit.com — great explanations of how to use ADTs in DDD (although language is F#)
 * adit.io — visual monads explanation (beginner-level friendly)
 * William Yao (or Haskell wikibooks) on RWS monads
 * William Yao on transformers (gives great explanation on how transformers and mtl approaches differ)
-* TODO: add sources on GADTs, Free/FT/HFM
+* `TODO` add sources on GADTs, Free/FT/HFM
 
 ## Tooling roadmap
 
-> **ghc** is compiler, **ghci** is used as REPL, **cabal** and/or **stack** are used for building/packaging.
+> Main haskell tools:
+> * **ghc** is compiler
+> * **ghci** is used as REPL
+> * **cabal** and/or **stack** are used for building/packaging (you usually choose one)
 
-I encourage you to avoid trying to install any of multimedia libs (GUI, Plotters, things like that) before you feel confident in working with ghc and cabal/stack.
+Some advice:
+* Don't rush yourself into using cabal/stack, since Haskell tooling sometimes is not very beginner-friendly
+* Clearly understand what is **package** (lib) and what is **module** in Haskell packaging world
+* Avoid trying to install any of multimedia libs (GUI, Plotters, things like that) before you feel confident in working with cabal/stack
 
-Step 1:
-1. When starting, I recommend working only with **ghci** and importing only from base modules (ignore tutorials that require non-base modules).
-2. Learn how to compile HellowWorld.hs with plane **ghc**
+Step 1 — ghci:
+1. Stay in **ghci** until you REALLY need non-default lib
+   * ghci by itself will carry you very far (upto transformers)
+   * You don't really need non-default libs when learning basics (and default modules like "import Control.Monad" are always available in ghci)
+   * For now, use **ghc** and **run-ghc** to run HelloWorld.hs scripts
+   * Ignore tutorials that require non-default libs (they are not beginner-level anyway)
+2. Learn how to organize you project into modules
+   * Such projects can still be run with just plane **ghci**
 
-Step 2:
-1. Clearly understand how **package** (lib) is not the same as **module** in Haskell 
-2. Organize your toy project into modules
-3. Create cabal/stack project with simple dependencies (like microlens)
-4. Learn how to work with cabal/stack project in ghci (cabal repl)
-5. Compile your cabal/stack project
+Step 2 — learn how to create/build/run/REPL cabal (or stack) project:
+1. Start with no-dependencies
+2. Try adding simple dependencies (like microlens)
 
-Step 3:
-1. Learn (on a surface-level) about compilation toolchains, c/linux/make — see how ghc uses all of it.
-   On Windows learn also about mingw, see what purpose does it surve (by itself, and how ghc uses it)
-2. Try including GUI lib into your project and writing hello-world app (on Windows may require some dark magic with mingw)
-
-At some point also try:
-* Including third-party package locally into your cabal/stack project (you can try including microlens package for example)
+As for complex libs with large dependencies (like GUI libs) — be prepared that including them into your project may be non-trivial (especially on Windows).
+Familiarizing yourself with compilation toolchains will help a lot here (c/make, static/dynamic linking, mingw on Windows, etc.).
 
