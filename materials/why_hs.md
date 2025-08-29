@@ -1,4 +1,3 @@
-
 # What I personally like about Haskell
 
 As a language:
