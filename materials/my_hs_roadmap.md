@@ -25,24 +25,24 @@ By the end of each step I encourage you to build small toy app ~300 LOC with arc
 # Language roadmap
 
 Step 1:
- 1. Get some experience (in any language) with: Pure functions, Immutables, Higher-order functions
- 2. Basic syntax (if-then-else, `.` and `$`, patter matching, case-of, let-in, where, guards, signatures, import, list comprehensions)
- 3. ADTs: product and sum types
- 4. Typeclasses
- 5. Base monad usage (Functor/Applicative/Monad theory, do-notation, using IO/Maybe monads)
- 6. Language extensions (just be aware that they exist and how to activate them)
- 7. Explore Prelude content (:browse Prelude)
+1. Get some experience (in any language) with: Pure functions, Immutables, Higher-order functions
+2. Basic syntax (if-then-else, `.` and `$`, patter matching, case-of, let-in, where, guards, signatures, import, list comprehensions)
+3. ADTs: product and sum types
+4. Typeclasses
+5. Base monad usage (Functor/Applicative/Monad theory, do-notation, using IO/Maybe monads)
+6. Language extensions (just be aware that they exist and how to activate them)
+7. Explore Prelude content (:browse Prelude)
 
 Step 2:
- 8. R/W/S and RWS monads
- 9. Monads stack via transformers lib (try for example: StateT Config IO a)
-10. Monads stack via mtl lib
+1. R/W/S and RWS monads
+2. Monads stack via transformers lib (try for example: StateT Config IO a)
+3. Monads stack via mtl lib
 
 Step 3:
-11. GADTs
-12. Free Monad, Interpreter pattern
-13. FT (current standard)
-14. HFM (approach by Alexander Granin) or other effect-lib you like
+1. GADTs
+2. Free Monad, Interpreter pattern
+3. FT (current standard)
+4. HFM (approach by Alexander Granin) or other effect-lib you like
 
 Somewhere in parallel:
 * `beginner` Monoids — see how Lists, Strings and numbers can be Monoids 
@@ -64,20 +64,20 @@ Sources:
 I encourage you to avoid trying to install any of multimedia libs (GUI, Plotters, things like that) before you feel confident in working with ghc and cabal/stack.
 
 Step 1:
- 1. When starting, I recommend working only with **ghci** and importing only from base modules (ignore tutorials that require non-base modules).
- 2. Learn how to compile HellowWorld.hs with plane **ghc**
+1. When starting, I recommend working only with **ghci** and importing only from base modules (ignore tutorials that require non-base modules).
+2. Learn how to compile HellowWorld.hs with plane **ghc**
 
 Step 2:
- 3. Clearly understand how **package** (lib) is not the same as **module** in Haskell 
- 4. Organize your toy project into modules
- 5. Create cabal/stack project with simple dependencies (like microlens)
- 7. Learn how to work with cabal/stack project in ghci (cabal repl)
- 8. Compile your cabal/stack project
+1. Clearly understand how **package** (lib) is not the same as **module** in Haskell 
+2. Organize your toy project into modules
+3. Create cabal/stack project with simple dependencies (like microlens)
+4. Learn how to work with cabal/stack project in ghci (cabal repl)
+5. Compile your cabal/stack project
 
 Step 3:
- 9. Learn (on a surface-level) about compilation toolchains, c/linux/make — see how ghc uses all of it.
-	On Windows learn also about mingw, see what purpose does it surve (by itself, and how ghc uses it)
-10. Try including GUI lib into your project and writing hello-world app (on Windows may require some dark magic with mingw)
+1. Learn (on a surface-level) about compilation toolchains, c/linux/make — see how ghc uses all of it.
+   On Windows learn also about mingw, see what purpose does it surve (by itself, and how ghc uses it)
+2. Try including GUI lib into your project and writing hello-world app (on Windows may require some dark magic with mingw)
 
 At some point also try:
 * Including third-party package locally into your cabal/stack project (you can try including microlens package for example)
