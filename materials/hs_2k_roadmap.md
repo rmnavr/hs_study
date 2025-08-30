@@ -1,10 +1,10 @@
 
-# Roadmap to confidently build ~2000 LOC general-purpose Haskell apps
-
-This roadmap focuses on learning well-established software design approaches and deliberately ignores esoteric Haskell side.
+# Roadmap to confidently build small-to-medium general-purpose Haskell apps
 
 Finishing this roadmap should make you feel confident in how to write ~2000 LOC general-purpose Haskell apps.
 It will also equip you with enough foundation to explore Haskell in any further direction of your need.
+
+This roadmap focuses on learning well-established software design approaches and deliberately ignores esoteric Haskell side.
 
 <!-- Summary ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾\ {{{1 -->
 
@@ -101,9 +101,9 @@ Familiarizing yourself with compilation toolchains will help a lot here (c/make,
 
 <!-- __________________________________________________________________________/ }}}1 -->
 
-# What now
+# Possible further directions
 
-If you want to learn how to scale to larger systems (10k+ LOC apps and more), see following topics with applications to Haskell:
+If you want to learn how to scale to larger systems (10k+ LOC apps), see following topics with applications to Haskell:
 * fp architecture (3-layered-cake, DI in FP, etc.)
 * testing
 * errors/logging

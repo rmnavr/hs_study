@@ -1,3 +1,6 @@
+
+<!-- Collections ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾\ {{{1 -->
+
 # Collections of materials
 
 ## Roadmaps
@@ -33,6 +36,9 @@
   * https://wiki.haskell.org/Meta-tutorial
   * https://wiki.haskell.org/Learning_Haskell
 
+<!-- __________________________________________________________________________/ }}}1 -->
+<!-- by Levels ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾\ {{{1 -->
+
 # Materials devided by levels
 
 ## Beginner/Intermediate articles
@@ -61,4 +67,7 @@
 * `youtube` [[→ Writing a simple interpreter]](https://www.youtube.com/watch?v=lDWTNVfsvbk)
 * `article` [[→ Lenses usage example]](https://github.com/michaelt/lens-simple/blob/master/examples/Pong.hs)
 * `article` [[→ 99 problems in Haskell]](https://wiki.haskell.org/index.php?title=H-99:_Ninety-Nine_Haskell_Problems)
+
+
+<!-- __________________________________________________________________________/ }}}1 -->
 
