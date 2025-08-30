@@ -1,4 +1,6 @@
     
+    -- run main to print calendar
+
     data DayOfWeek
         = Sunday | Monday | Tuesday | Wednesday | Thursday | Friday | Saturday
         deriving (Eq, Enum, Bounded)

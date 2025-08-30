@@ -1,4 +1,14 @@
 
+    -- Add new entry with command like
+    -- ghci> + DoSmth
+    -- 
+    -- To remove entry #0, type
+    -- ghci> - 0
+    -- 
+    -- To exit type:
+    -- ghci> q
+
+
     promptTodosList :: [String] -> IO ()
     promptTodosList todos = do
         putStrLn ""

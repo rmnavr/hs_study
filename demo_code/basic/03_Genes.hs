@@ -1,4 +1,9 @@
     
+    -- try entering GCUAGG or other correct RNA in main
+
+    -- warning: this code is very primitive
+    -- (has issues with closing handles, will not work with incorrect RNA, etc.)
+
     data RNA
         = A | U | C | G
         deriving (Read)

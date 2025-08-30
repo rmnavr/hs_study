@@ -1,3 +1,4 @@
+# Haskell bird-view map
 
 This Haskell map structures all the different haskell-related topics.
 It should give you good bird-view picture on Haskell and it's tooling.
@@ -59,16 +60,17 @@ Typing:
 * `TODO` Generics, DataKinds, linear, phantom, existential, promoted
 * `TODO` Dependent, Refinement types (liquid haskell)
 
-Monads (composition):
+Monads:
 * Functor, Applicative, Monad
 * Main monads: IO, List, Maybe, Either, RWS; (and also: Continuation, Lazy, Operational)
 * Relevant classes: Arrow, Alternative, MonadPlus, Comonad, Profunctor
 * Transformers: transformers lib, mtl lib
-* Free monad DSLs:
-  * Free monads, Church-encoded Monads
-  * Final Tagless
-  * Hierarchical Free Monads 
-  * `TODO` Effect systems and libs (fused effects, algebraic effects, etc.)
+
+Free monadic DSLs (effect systems):
+* Free monads, Church-encoded Monads
+* Final Tagless
+* Hierarchical Free Monads 
+* `TODO` Effect systems and libs (fused effects, algebraic effects, etc.)
 
 Monoids:
 * Monoid, Semigroup
@@ -79,7 +81,6 @@ Monoids:
 Extensions, metaprogramming
 * Language extensions
 * Template haskell (quasiquoting)
-* Liquid haskell
 
 Experimental/Esoteric:
 * `TODO` ...
