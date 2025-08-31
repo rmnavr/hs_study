@@ -8,9 +8,11 @@ Collections of materials for learning Haskell.
 # Main
 
 * [Haskell map (bird-view)](https://github.com/rmnavr/hs_study/blob/main/materials/hs_map.md)
-* [Roadmap to writing small-to-medium general-purpose apps in Haskell](https://github.com/rmnavr/hs_study/blob/main/materials/hs_2k_roadmap.md) 
+  — gives you nice picture of how every haskell related topic connects to the rest of the language, separates pragmatic parts from esoteric ones
+* [Roadmap to writing small-to-medium general-purpose apps in Haskell](https://github.com/rmnavr/hs_study/blob/main/materials/hs_2k_roadmap.md)
+  — pragmatic roadmap aimed at giving you strong skeleton, that you'll be able to grow muscles on
 * [Haskell Cheetsheets](https://github.com/rmnavr/hs_study/blob/main/chsheet/README.md)
-* [Haskell code examples](https://github.com/rmnavr/hs_study/blob/main/demo_code/README.md)
+* [Haskell code examples](https://github.com/rmnavr/hs_study/blob/main/demo_code/README.md) — from 30 LOC scripts to demonstrations of industry-level projects
 
 # Yapping
 

@@ -1,3 +1,6 @@
+
+<!-- Intro ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾\ {{{1 -->
+
 # Haskell bird-view map
 
 This Haskell map structures all the different haskell-related topics.
@@ -12,7 +15,7 @@ Table of contents:
 - [Softwared Design](#Software-Design-in-Haskell)
 - [Architecture](#Architecture-in-Haskell)
 
----
+<!-- __________________________________________________________________________/ }}}1 -->
 
 <!-- Tooling ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾\ {{{1 -->
 
@@ -37,55 +40,90 @@ Compilation topics:
 * `TODO` Add more
 
 <!-- __________________________________________________________________________/ }}}1 -->
-<!-- Language ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾\ {{{1 -->
+<!-- Language core ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾\ {{{1 -->
 
-# Language
+# General-purpose language core
+
+> Detailed roadmap of learning this "language core" is given in 
+> [Roadmap to writing small-to-medium general-purpose apps in Haskell](https://github.com/rmnavr/hs_study/blob/main/materials/hs_2k_roadmap.md) 
+
+Basic principles:
+* purity, side-effects
+* higher-order functions
+* curry-by-default (in Haskell)
+* immutability
+* lazyness
+* static typing
 
 Basic Syntax:
-* imports
-* function/type signatures
 * functions composition (.) and application ($)
-* pattern matching, case of, guards, where, let in, as-pattern (@), cons operator (:)
+* function/type signatures
+* if-then-else
+* pattern matching, case of, guards, where, let in
 * lambda functions
-* do blocks
+* as-pattern (@), cons operator (:)
 * list comprehensions
+* do blocks
 * typing keywords: data, type, newtype, class, instance
+* imports syntax (as, qualified, hiding)
 
 Typing:
 * Prelude basics: Eq, Show, Int/Float/String, ...
-* typeclasses
+* Typeclasses
 * ADTs, record syntax
 * GADTs
-* `TODO` Type families, higher kinded types, rank N types
-* `TODO` Generics, DataKinds, linear, phantom, existential, promoted
-* `TODO` Dependent, Refinement types (liquid haskell)
+* Type families, higher kinded types, rank N types, datakinds
+
+Monoids:
+* Monoid, Semigroup
+* Traversable, Foldable, Zippers
+* Lens
 
 Monads:
 * Functor, Applicative, Monad
-* Main monads: IO, List, Maybe, Either, RWS; (and also: Continuation, Lazy, Operational)
-* Relevant classes: Arrow, Alternative, MonadPlus, Comonad, Profunctor
-* Transformers: transformers lib, mtl lib
+* Monads Zoo: IO, List, Maybe, Either, RWS
+* Transformers via transformers lib (also: ExceptT)
+* Transformers via mtl lib
 
 Free monadic DSLs (effect systems):
 * Free monads, Church-encoded Monads
 * Final Tagless
 * Hierarchical Free Monads 
-* `TODO` Effect systems and libs (fused effects, algebraic effects, etc.)
 
-Monoids:
-* Monoid, Semigroup
-* Traversable, Foldable, Zippers
+<!-- __________________________________________________________________________/ }}}1 -->
+<!-- Language widening ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾\ {{{1 -->
+
+# Widening your haskell toolbelt
+
+Somewhat general purpose patterns:
+* Alternative, MonadPlus
+* Lazy, Operational, STM
+
+Highly situational (and maybe even esoteric):
+* Comonad, Arrow
+* Profunctor
+* Yoneda, Coyoneda
 * Free Monoid
-* Lens
 
-Extensions, metaprogramming
+Composition techniques:
+* Cont
+* Parser combinators 
+
+Advanced typing:
+* Generics
+* Linear, Phantom, Existential, Promoted
+* Dependent, Refinement types (liquid haskell)
+
+Extensions, metaprogramming:
 * Language extensions
 * Template haskell (quasiquoting)
 
-Experimental/Esoteric:
-* `TODO` ...
+Advanced effects systems:
+* Algebraic effects
+* Fused effects, Freer, Extensible-effect, effectful, polysemy
 
 <!-- __________________________________________________________________________/ }}}1 -->
+
 <!-- Software Design ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾\ {{{1 -->
 
 # Software Design in Haskell
@@ -93,35 +131,57 @@ Experimental/Esoteric:
 Topics:
 * Testing
 * Errors, Logging
-* Concurency (STM Monad)
+* Concurency, Async (STM Monad)
 * Interop (FFI)
-* Profiling, Performance
+* Performance, Profiling with ghc
 * Documentation (Haddoc)
 * Reprodusable building (cabal/stack, nix)
+* Publishing your proj/lib on hackage/stackage
 
 <!-- __________________________________________________________________________/ }}}1 -->
 <!-- Architecture ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾\ {{{1 -->
 
 # Architecture in Haskell
 
-FP Structures:
-* Pure functions + ADTs
-* Transformers
-* Free Monads (effects DSLs) + GADTs
+FP approaches:
+* make illegal state irrepresentable
+* pure core imperative shell
 
-Architectural patterns:
+Traditional architectures:
+* ReaderT for DI
+* 3-layered-cake
+* onion, ports and adapters
+
+Architectures:
+* CQRS
+* Actor model
+* Event sourcing
 * Service handle
 * FRP
 * Elm architecture (MVU)
-* `TODO` Add more
-
-Principles:
-* 3-layered-cake
-* DI in FP
-* `TODO` Add more
-
 
 <!-- __________________________________________________________________________/ }}}1 -->
+<!-- Math ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾\ {{{1 -->
 
+# Math and Computation theory
 
+If you are into those kind of things, dive into:
+* Lambda calculus
+* Cathegory theory 
+* Hindley-Milner typing
+
+Although be aware, that knowing all of it will not directly make you better haskeller.
+
+<!-- __________________________________________________________________________/ }}}1 -->
+<!-- Domains ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾\ {{{1 -->
+
+# Domains
+
+* Frontend (JS/HTML)
+* GUI
+* DS
+* Writing/parsing languages
+* ...
+
+<!-- __________________________________________________________________________/ }}}1 -->
 
