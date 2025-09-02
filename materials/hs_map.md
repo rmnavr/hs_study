@@ -6,41 +6,17 @@ This Haskell map structures all the different haskell-related topics.
 It should give you good bird-view picture on Haskell and it's tooling.
 
 > Table of contents:
-> - [Learning roadmap](#Learning-roadmap)
 > - [Tooling](#Tooling)
 > - [Language](#Language)
 >   - [Universal pragmatic core](#Universal-pragmatic-core)
 >   - [Other Pragmatic topics](#Other-Pragmatic-topics)
 >   - [Specialized, Experimental, Esoteric](#Specialized-Experimental-Esoteric)
-> - [Further directions](#Further-directions)
+> - [Other directions](#Other-directions)
 >   - [Softwared Design](#Software-Design-in-Haskell)
 >   - [Architecture](#Architecture-in-Haskell)
 >   - [Math](#Math-and-Computation-theory)
 >   - [Domains](#Domains)
-
-<!-- __________________________________________________________________________/ }}}1 -->
-
-# Learning roadmap
-<!-- Learning ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾\ {{{1 -->
-
-Focus on [Universal pragmatic core](#Universal-pragmatic-core) and you will be able to:
-* confidently build well-structured ~2k LOC apps (dive into software design to scale to 10k+ LOC)
-* confidently move to any further (more specialized) direction of your choice
-
-Info: most universally, you can build your architectures in Haskell with (growing complexity):
-1. Pure functions + ADTs + Simple monads (Maybe, IO)
-2. Monad stacks, with RWS-group and ExceptT being the most frequently used transformers
-3. *Not as universal, but still widely used:* Free monadic DSLs + GADTs
-
-Advice for learning language:
-* Category theory is not needed (nor does it help too much) to program in Haskell
-* Focusing on HOW TO USE complex patterns (monads/functors/lens/etc.) is often more beneficial than focusing on THEIR INTERNALS
-
-Advice for learning tooling:
-1. Stay as long as possible in plain ghci (ignore tutorials that require 3rd-party libs)
-2. Try building/repling cabal/stack proj with no dependencies
-3. Try building/repling cabal/stack proj with simple dependencies
-4. Try building/repling cabal/stack proj with complex dependencies like GUI libs (may be non-trivial, especially on Windows)
+> - [Roadmap to writing apps in Haskell](#Roadmap-to-writing-small-to-medium-apps-in-Haskell)
 
 <!-- __________________________________________________________________________/ }}}1 -->
 
@@ -66,7 +42,6 @@ Compilation topics:
 * `TODO` Add more
 
 <!-- __________________________________________________________________________/ }}}1 -->
-
 
 # Language
 <!-- Language core ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾\ {{{1 -->
@@ -138,7 +113,7 @@ Free monadic DSLs (effect systems):
 
 ## Specialized, Experimental, Esoteric
 
-Topics below that should widen your Haskell toolbelt, although you can live without most of them.
+Topics below should widen your Haskell toolbelt, although you can live without most of them.
 Those topics are not all necessarily advanced.
 
 Somewhat general purpose patterns:
@@ -170,7 +145,7 @@ Extensions, metaprogramming:
 
 <!-- __________________________________________________________________________/ }}}1 -->
 
-# Further directions (less haskell-centric)
+# Other directions (less haskell-centric)
 <!-- Software Design ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾\ {{{1 -->
 
 ## Software Design in Haskell
@@ -229,6 +204,30 @@ Although be aware, that knowing all of it will not directly make you better hask
 * DS
 * Writing/parsing languages
 * ...
+
+<!-- __________________________________________________________________________/ }}}1 -->
+
+# Roadmap to writing small-to-medium apps in Haskell
+<!-- Learning ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾\ {{{1 -->
+
+Focus on [Universal pragmatic core](#Universal-pragmatic-core) and you will be able to:
+* confidently build well-structured ~2k LOC apps (dive into software design to scale to 10k+ LOC)
+* confidently move to any further (more specialized) direction of your choice
+
+Info: most universally, you can build your architectures in Haskell with (growing complexity):
+1. Pure functions + ADTs + Simple monads (Maybe, IO)
+2. Monad stacks, with RWS-group and ExceptT being the most frequently used transformers
+3. *Not as universal, but still widely used:* Free monadic DSLs + GADTs
+
+Advice for learning language:
+* Category theory is not needed (nor does it help too much) to program in Haskell
+* Focusing on HOW TO USE complex patterns (monads/functors/lens/etc.) is often more beneficial than focusing on THEIR INTERNALS
+
+Advice for learning tooling:
+1. Stay as long as possible in plain ghci (ignore tutorials that require 3rd-party libs)
+2. Try building/repling cabal/stack proj with no dependencies
+3. Try building/repling cabal/stack proj with simple dependencies
+4. Try building/repling cabal/stack proj with complex dependencies like GUI libs (may be non-trivial, especially on Windows)
 
 <!-- __________________________________________________________________________/ }}}1 -->
 
