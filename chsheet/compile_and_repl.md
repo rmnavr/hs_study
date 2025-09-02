@@ -65,7 +65,7 @@ Info on environment:
   active package flags:
     -package-id base-4.17.2.1
     -package-id microlens-0.4.13.1-6e1439427656e00f80775e91fd3a11fb0dea8923
- ```
+  ```
 * `:show modules` — ??? (*gives me empty list everytime*)
 * `:show imports` — gives result like:
   ```haskell
