@@ -1,6 +1,5 @@
 
 # Haskell bird-view map
-
 <!-- Intro ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾\ {{{1 -->
 This Haskell map structures all the different haskell-related topics.
 It should give you good bird-view picture on Haskell and it's tooling.
@@ -23,12 +22,20 @@ It should give you good bird-view picture on Haskell and it's tooling.
 # Tooling
 <!-- Tooling ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾\ {{{1 -->
 
-Software:
+Main tools:
 * **ghc** (compiling) — [[→ ghc docs]](https://downloads.haskell.org/ghc/latest/docs/users_guide/)
 * **ghci** (REPL, debugging) — [[→ ghci docs]](https://downloads.haskell.org/ghc/latest/docs/users_guide/ghci.html)
-* **cabal** and **stack**
-* on Windows: **msys**, **mingw**
-* Other: **ghc-pkg**, **ghcup**
+* **cabal** — [[→ cabal docs]](https://cabal.readthedocs.io/en/stable/getting-started.html)
+* **stack** — ...
+
+Other:
+* **ghcup**
+* **ghc-pkg**
+* **runghc**
+
+Windows-related:
+* **msys**
+* **mingw**
 
 Main websites:
 * hackage
@@ -39,7 +46,7 @@ Main websites:
 
 Compilation topics:
 * static/dynamic linking
-* `TODO` Add more
+* ...
 
 <!-- __________________________________________________________________________/ }}}1 -->
 

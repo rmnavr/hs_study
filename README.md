@@ -7,8 +7,9 @@ Collections of materials for learning Haskell.
 
 # Main
 
-* [Haskell map (bird-view)](https://github.com/rmnavr/hs_study/blob/main/materials/hs_map.md)
-  — gives you nice picture of how every Haskell-related topic connects to the rest of the language; separates pragmatic parts from esoteric ones
+* [Haskell map (bird-view)](https://github.com/rmnavr/hs_study/blob/main/materials/hs_map.md) —
+  systematic picture of how every Haskell-related topic connects to the rest of the language (pragmatic and esoteric things are explicitly separated)
+* [Haskell map (bird-view)](https://github.com/rmnavr/hs_study/blob/main/materials/hs_map.md) —
 * [Haskell Cheetsheets](https://github.com/rmnavr/hs_study/blob/main/chsheet/README.md)
 * [Haskell code examples](https://github.com/rmnavr/hs_study/blob/main/demo_code/README.md) — from 30 LOC scripts to demonstrations of industry-level projects
 
