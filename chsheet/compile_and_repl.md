@@ -1,4 +1,6 @@
 
+> Some things are mostly Cabal and Windows specific.
+
 <!-- 3 simple ways to run ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾\ {{{1 -->
 
 # 3 simple ways to run simple scripts
@@ -29,56 +31,95 @@ GHC comes with list of preinstalled packages:
 * **Prelude** is imported automatically and reimports mostly from **base** package (it also imports many things from other modules too)
 
 <!-- __________________________________________________________________________/ }}}1 -->
+<!-- ghci basics ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾\ {{{1 -->
+
+# Basic ghci commands
+
+Meta:
+* `:h` — help
+* `:! ls` — run shell commands without leaving ghci
+* `:q` — exit ghci
+
+Info on entities:
+* `:type map`
+* `:kind Functor`
+* `:info Eq`
+* `:browse Prelude`
+* `:doc Monad`
+* `:instances Word`
+* `:browse Prelude`
+
+Manipulating target set:
+* `:add HelloWorld.hs`, `:unadd ...` — add/remove module(s) to the current target set
+* `:load HelloWorld.hs`, `:reload` — load module(s) and it's dependencies into module set
+* `:module +Lens.Micro` — smth similar to running `import Lens.Micro`
+* `:module <TAB>` — will give list of all currently available modules for imports
+
+Ghci package-related commands:
+* `.ghci` file in proj dir can contain preloaded commands
+
+Info on environment:
+* `:show targets` — gives list of loaded files (which is target set?)
+* `:show packages` — gives info like:
+  ```
+  active package flags:
+    -package-id base-4.17.2.1
+    -package-id microlens-0.4.13.1-6e1439427656e00f80775e91fd3a11fb0dea8923
+ ```
+* `:show modules` — ??? (*gives me empty list everytime*)
+* `:show imports` — gives result like:
+  ```haskell
+  import Lens.Micro
+  import Prelude -- implicit
+  ```
+  Modules loaded via `:module` are shown here too.
+* `:show linker` — gives info like:
+  ```
+  ----- Loader state -----
+  Pkgs: [rts, ghc-prim, ghc-bignum, base,
+         microlens-0.4.13.1-6e1439427656e00f80775e91fd3a11fb0dea8923]
+  Objs: []
+  BCOs: []
+  ```
+* `:show bindings` — shows things currently in scope like `x = 13` and such
+* `:show language` — shows language flags
+* `:showi language` — shows language flags in ghci (may differ from `:show language`)
+* `:show paths`
+
+<!-- __________________________________________________________________________/ }}}1 -->
 <!-- ghci exposure terminology ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾\ {{{1 -->
 
 # Managing packages and modules
 
 Explore packages lists:
-* `ghc-pkg list` — shows list of base only packages (is it correct?)
+* `ghc-pkg list` — shows list of globally available packages
 * `cabal list --installed` — gives same list as `ghc-pkg list` but more verbose
 * `ghc-pkg describe mtl` — gives list of modules exposed by package `mtl`
 
 Steps for making new package available in ghci:
-1. **Install** it (`microlens` for example). This package is now **hidden**
-   (meaning it is not loaded in ghci memory, but can be).
+1. **Install** it globally (`cabal install microlens --lib` for example).
+   This package is now **hidden** (meaning it is not yet loaded in ghci memory, but it can be).
 2. **Expose** it (meaning now you will be able to call `import Lens.Micro`):
-   * in current ghci session — via `:set -package microlens`
-   * `ghci -package microlens` — start with package `microlens` exposed (but not imported)
+   * In current ghci session — via `:set -package microlens`
+   * Start ghci with this package exposed (but not imported) — via `ghci -package microlens`
 3. You can now load it's modules content into ghci scope via **imports**:
    `import Lens.Micro`
 
-Ghci:
-* `it` is value of last REPL execution result
-* `.ghci` file in proj dir can contain preloaded commands
-* `:module Lens.Micro` — ? (has more features than Import)
-* `:module <TAB>` — will give list of all available modules for imports
-* `:load HelloWorld.hs` — ?
-* `:load`, `:reload` — ?
-* `:add`, `:unadd` — ?
-
-Explore ghci session:
-* `:show packages` — ?
-* `:show modules` — ?
-* `:show imports` — ?
-* `:show linker` — ?
-* `:show bindings` — ?
-* `:show/showi language` — ?
-
-<!-- __________________________________________________________________________/ }}}1 -->
-<!-- ghci basics ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾\ {{{1 -->
-
-# Ghci basic commands
-
-* :type map
-* :kind Functor
-* :info Eq
-* :browse Prelude
+What packages will be exposed when you run `ghci` command?
+1. See file `default` (yes, without extension) located somewhere in:
+   > C:\Users\Username\AppData\Roaming\ghc\x86_64-mingw32-9.4.8\environments\default
+   This address is prompted when ghci loaded.
+2. This file has a list of packages istalled with `cabal install microlens --lib`
+   and it looks like so:
+   ```
+   clear-package-db
+   global-package-db
+   package-db D:\Soft_categories\Engn_Programming\Haskell\cabal\store\ghc-9.4.8\package.db
+   package-id base-4.17.2.1
+   package-id microlens-0.4.13.1-6e1439427656e00f80775e91fd3a11fb0dea8923
+   ```
+   All listed here packages will be automatically exposed.
+3. Yes, you call `ghci`, and it loads package config that is filled by cabal, yes.
 
 <!-- __________________________________________________________________________/ }}}1 -->
 
-# Incubator
-
-* :load only_for_files (not modules)
-* :browse System.IO
-* :module +System.IO -> :show imports
-* import System.IO   -> :show imports
