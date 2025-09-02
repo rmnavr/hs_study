@@ -1,25 +1,51 @@
 
-<!-- Intro ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾\ {{{1 -->
-
 # Haskell bird-view map
 
+<!-- Intro ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾\ {{{1 -->
 This Haskell map structures all the different haskell-related topics.
 It should give you good bird-view picture on Haskell and it's tooling.
 
-* Topics are given without differentiation between Beginner/Intermediate/Advanced levels.
-* Points marked with `TODO` require better structuring.
-
-Table of contents:
-- [Tooling](#Tooling)
-- [Language](#Language)
-- [Softwared Design](#Software-Design-in-Haskell)
-- [Architecture](#Architecture-in-Haskell)
+> Table of contents:
+> - [Learning roadmap](#Learning-roadmap)
+> - [Tooling](#Tooling)
+> - [Language](#Language)
+>   - [Universal pragmatic core](#Universal-pragmatic-core)
+>   - [Other Pragmatic topics](#Other-Pragmatic-topics)
+>   - [Specialized, Experimental, Esoteric](#Specialized-Experimental-Esoteric)
+> - [Further directions](#Further-directions)
+>   - [Softwared Design](#Software-Design-in-Haskell)
+>   - [Architecture](#Architecture-in-Haskell)
+>   - [Math](#Math-and-Computation-theory)
+>   - [Domains](#Domains)
 
 <!-- __________________________________________________________________________/ }}}1 -->
 
-<!-- Tooling ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾\ {{{1 -->
+# Learning roadmap
+<!-- Learning ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾\ {{{1 -->
+
+Focus on [Universal pragmatic core](#Universal-pragmatic-core) and you will be able to:
+* confidently build well-structured ~2k LOC apps (dive into software design to scale to 10k+ LOC)
+* confidently move to any further (more specialized) direction of your choice
+
+Info: most universally, you can build your architectures in Haskell with (growing complexity):
+1. Pure functions + ADTs + Simple monads (Maybe, IO)
+2. Monad stacks, with RWS-group and ExceptT being the most frequently used transformers
+3. *Not as universal, but still widely used:* Free monadic DSLs + GADTs
+
+Advice for learning language:
+* Category theory is not needed (nor does it help too much) to program in Haskell
+* Focusing on HOW TO USE complex patterns (monads/functors/lens/etc.) is often more beneficial than focusing on THEIR INTERNALS
+
+Advice for learning tooling:
+1. Stay as long as possible in plain ghci (ignore tutorials that require 3rd-party libs)
+2. Try building/repling cabal/stack proj with no dependencies
+3. Try building/repling cabal/stack proj with simple dependencies
+4. Try building/repling cabal/stack proj with complex dependencies like GUI libs (may be non-trivial, especially on Windows)
+
+<!-- __________________________________________________________________________/ }}}1 -->
 
 # Tooling
+<!-- Tooling ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾\ {{{1 -->
 
 Software:
 * **ghc** (compiling) — [[→ ghc docs]](https://downloads.haskell.org/ghc/latest/docs/users_guide/)
@@ -40,14 +66,16 @@ Compilation topics:
 * `TODO` Add more
 
 <!-- __________________________________________________________________________/ }}}1 -->
+
+
+# Language
 <!-- Language core ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾\ {{{1 -->
 
-# General-purpose language core
+## Universal pragmatic core
 
-> Detailed roadmap of learning this "language core" is given in 
-> [Roadmap to writing small-to-medium general-purpose apps in Haskell](https://github.com/rmnavr/hs_study/blob/main/materials/hs_2k_roadmap.md) 
+Below are the most general-purpose and pragmatic haskell topics you absolutely need and cannot avoid.
 
-Basic principles:
+Basic principles (in FP and in Haskell in particular):
 * purity, side-effects
 * higher-order functions
 * curry-by-default (in Haskell)
@@ -72,7 +100,6 @@ Typing:
 * Typeclasses
 * ADTs, record syntax
 * GADTs
-* Type families, higher kinded types, rank N types, datakinds
 
 Monoids:
 * Monoid, Semigroup
@@ -82,22 +109,44 @@ Monoids:
 Monads:
 * Functor, Applicative, Monad
 * Monads Zoo: IO, List, Maybe, Either, RWS
-* Transformers via transformers lib (also: ExceptT)
-* Transformers via mtl lib
+* Transformers (transformers/mtl libs approaches); also: ExceptT
+
+<!-- __________________________________________________________________________/ }}}1 -->
+<!-- Language core+ ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾\ {{{1 -->
+
+## Other Pragmatic topics
+
+Below are widely used, but little bit less universal haskell topics.
+
+Modern practices:
+* Basic language extensions (that are more like convenience-aimed rather than language-changing)
+* Text vs String vs ByteString
+
+Typing:
+* Type families
+* Higher kinded types
+* Rank N types
+* Datakinds
 
 Free monadic DSLs (effect systems):
 * Free monads, Church-encoded Monads
-* Final Tagless
-* Hierarchical Free Monads 
+* Final Tagless (somewhat industry-standard)
+* Hierarchical Free Monads (opinionated choice)
 
 <!-- __________________________________________________________________________/ }}}1 -->
 <!-- Language widening ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾\ {{{1 -->
 
-# Widening your haskell toolbelt
+## Specialized, Experimental, Esoteric
+
+Topics below that should widen your Haskell toolbelt, although you can live without most of them.
+Those topics are not all necessarily advanced.
 
 Somewhat general purpose patterns:
 * Alternative, MonadPlus
 * Lazy, Operational, STM
+
+Effects systems, algebraic effects libs:
+* Fused effects, Freer, Extensible-effect, effectful, polysemy
 
 Highly situational (and maybe even esoteric):
 * Comonad, Arrow
@@ -106,8 +155,9 @@ Highly situational (and maybe even esoteric):
 * Free Monoid
 
 Composition techniques:
+* Parser combinators
 * Cont
-* Parser combinators 
+* Some exotic pointfree notations
 
 Advanced typing:
 * Generics
@@ -115,18 +165,15 @@ Advanced typing:
 * Dependent, Refinement types (liquid haskell)
 
 Extensions, metaprogramming:
-* Language extensions
+* Language extensions (non-basic)
 * Template haskell (quasiquoting)
-
-Advanced effects systems:
-* Algebraic effects
-* Fused effects, Freer, Extensible-effect, effectful, polysemy
 
 <!-- __________________________________________________________________________/ }}}1 -->
 
+# Further directions (less haskell-centric)
 <!-- Software Design ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾\ {{{1 -->
 
-# Software Design in Haskell
+## Software Design in Haskell
 
 Topics:
 * Testing
@@ -141,7 +188,7 @@ Topics:
 <!-- __________________________________________________________________________/ }}}1 -->
 <!-- Architecture ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾\ {{{1 -->
 
-# Architecture in Haskell
+## Architecture in Haskell
 
 FP approaches:
 * make illegal state irrepresentable
@@ -163,7 +210,7 @@ Architectures:
 <!-- __________________________________________________________________________/ }}}1 -->
 <!-- Math ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾\ {{{1 -->
 
-# Math and Computation theory
+## Math and Computation theory
 
 If you are into those kind of things, dive into:
 * Lambda calculus
@@ -175,7 +222,7 @@ Although be aware, that knowing all of it will not directly make you better hask
 <!-- __________________________________________________________________________/ }}}1 -->
 <!-- Domains ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾\ {{{1 -->
 
-# Domains
+## Domains
 
 * Frontend (JS/HTML)
 * GUI
