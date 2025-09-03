@@ -2,7 +2,6 @@
     -- Definitions of Monad-related typeclasses in GHC
     -- (as given via :browse in ghci, when nothing except Prelude is loaded)
 
-
 -- Functor/Applicative/Monad ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾\ {{{1
 
     -- Main methods and their rough correspondence to each other: 
@@ -61,6 +60,5 @@
     fmap id (Just 1) == id (Just 1)
 
 -- ____________________________________________________________________________/ }}}1
-
 
 
