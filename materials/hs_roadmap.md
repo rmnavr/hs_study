@@ -3,11 +3,12 @@
 
 ## Roadmap overview
 
+Complete these instructions ...
 1. Learn every topic on chapter [Universal pragmatic core](https://github.com/rmnavr/hs_study/blob/main/materials/hs_map.md#Universal-pragmatic-core) of *Haskell map*
 2. Explore the same *Haskell map* to become aware of topics you DON't need to learn (which are everything except Universal pragmatic core)
 3. Learn tooling by steps given below
 
-And you will be able to:
+... and you will be able to:
 * confidently build well-structured ~2k LOC apps (dive into software design to scale to 10k+ LOC)
 * confidently move to any further (more specialized) direction of your choice
 
@@ -15,9 +16,9 @@ And you will be able to:
 
 In given order:
 1. Stay as long as possible in plain ghci
-  * learning tooling can be surprisingly painfull, so this way extra friction will be removed
-  * you can finish checkpoints 1 and 2 (see below) without leaving ghci
-  * yes, you can simply ignore tutorials that require 3rd-party libs for now
+   * learning tooling can be surprisingly painfull, so this way extra friction will be removed
+   * you can finish checkpoints 1 and 2 (see below) without leaving ghci
+   * yes, you can simply ignore tutorials that require 3rd-party libs for now
 2. Try building/repling cabal/stack proj with no dependencies
 3. Try building/repling cabal/stack proj with simple dependencies
 4. Try building/repling cabal/stack proj with complex dependencies like GUI libs (may be non-trivial, especially on Windows)
