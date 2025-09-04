@@ -3,7 +3,7 @@
 
 ## Roadmap overview
 
-1. Learn every topic on chapter [Universal pragmatic core](https://github.com/rmnavr/hs_study/blob/main/materials/hs_roadmap.md#Universal-pragmatic-core) of *Haskell map*
+1. Learn every topic on chapter [Universal pragmatic core](https://github.com/rmnavr/hs_study/blob/main/materials/hs_map.md#Universal-pragmatic-core) of *Haskell map*
 2. Explore the same *Haskell map* to become aware of topics you DON't need to learn (which are everything except Universal pragmatic core)
 3. Learn tooling by steps given below
 
