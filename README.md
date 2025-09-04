@@ -5,20 +5,28 @@ Collections of materials for learning Haskell.
 
 ---
 
-# Main
+# Systematic
 
 * [Haskell map (bird-view)](https://github.com/rmnavr/hs_study/blob/main/materials/hs_map.md) —
-  systematic picture of how every Haskell-related topic connects to the rest of the language (pragmatic and esoteric things are explicitly separated)
-* [Haskell Cheetsheets](https://github.com/rmnavr/hs_study/blob/main/chsheet/README.md)
-* [Haskell code examples](https://github.com/rmnavr/hs_study/blob/main/demo_code/README.md) — from 30 LOC scripts to demonstrations of industry-level projects
+  systematic picture of how every Haskell topic connects to the rest of the language (pragmatic and esoteric things are explicitly separated)
+* [Haskell roadmap to writing small-to-medium general-purpose apps](https://github.com/rmnavr/hs_study/blob/main/materials/hs_roadmap.md) —
+  clearly outlines what you should learn first, what should be skipped and what are the main checkpoints
+
+# Coding
+
+* [Haskell Cheetsheets](https://github.com/rmnavr/hs_study/blob/main/chsheet/README.md) — well-curated materials on language usage
+* [Realistic Haskell apps examples](https://github.com/rmnavr/hs_study/blob/main/demo_code/README.md) — from 30 LOC demo-scripts to industry-level projects
+
+Code snippets, explanations, etc. which may be usefull, but which are not of cheetsheet-level quality:
+* [Incubator](https://github.com/rmnavr/hs_study/blob/main/incubator)
 
 # Yapping
 
-* [My reasons to learn/use Haskell](https://github.com/rmnavr/hs_study/blob/main/materials/why_hs.md) 
+* [My reasons to learn/use Haskell](https://github.com/rmnavr/hs_study/blob/main/materials/why_hs.md)
 * [Takeaways from yapping articles](https://github.com/rmnavr/hs_study/blob/main/materials/articles_consp.md)
+* [Links to yappings articles on Haskell (philosophy, strength and weaknesses, etc.)](https://github.com/rmnavr/hs_study/blob/main/materials/_yapping_articles.md)
 
 # Links to outer sources
 
-* [Links to learning materials (with comments)](https://github.com/rmnavr/hs_study/blob/main/materials/_learning_materials.md) 
-* [Links to yappings articles on Haskell (philosophy, strength and weaknesses, etc.)](https://github.com/rmnavr/hs_study/blob/main/materials/_yapping_articles.md)
+* [Links to learning materials (with comments)](https://github.com/rmnavr/hs_study/blob/main/materials/_learning_materials.md)
 

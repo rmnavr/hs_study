@@ -15,7 +15,6 @@ It should give you good bird-view picture on Haskell and it's tooling.
 >   - [Architecture](#Architecture-in-Haskell)
 >   - [Math](#Math-and-Computation-theory)
 >   - [Domains](#Domains)
-> - [Roadmap to writing apps in Haskell](#Roadmap-to-writing-small-to-medium-apps-in-Haskell)
 
 <!-- __________________________________________________________________________/ }}}1 -->
 
@@ -83,15 +82,10 @@ Typing:
 * ADTs, record syntax
 * GADTs
 
-Monoids:
-* Monoid, Semigroup
-* Traversable, Foldable, Zippers
-* Lens
-
 Monads:
 * Functor, Applicative, Monad
 * Monads Zoo: IO, List, Maybe, Either, RWS
-* Transformers (transformers/mtl libs approaches); also: ExceptT
+* Transformers (transformers/mtl libs approaches)
 
 <!-- __________________________________________________________________________/ }}}1 -->
 <!-- Language core+ ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾\ {{{1 -->
@@ -99,6 +93,11 @@ Monads:
 ## Other Pragmatic topics
 
 Below are widely used, but little bit less universal haskell topics.
+
+Monoids:
+* Monoid, Semigroup
+* Traversable, Foldable, Zippers
+* Lens
 
 Modern practices:
 * Basic language extensions (that are more like convenience-aimed rather than language-changing)
@@ -114,6 +113,14 @@ Free monadic DSLs (effect systems):
 * Free monads, Church-encoded Monads
 * Final Tagless (somewhat industry-standard)
 * Hierarchical Free Monads (opinionated choice)
+
+Effect systems (choose the one you like more):
+* `language core` RWS monad for simple apps 
+* `language core` mtl-style 
+* capabilities pattern (storing effects in ReaderT)
+* `lib` polysemy
+* `lib` capabilities
+* `lib` fused effects
 
 <!-- __________________________________________________________________________/ }}}1 -->
 <!-- Language widening ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾\ {{{1 -->
@@ -214,27 +221,4 @@ Although be aware, that knowing all of it will not directly make you better hask
 
 <!-- __________________________________________________________________________/ }}}1 -->
 
-# Roadmap to writing small-to-medium apps in Haskell
-<!-- Learning ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾\ {{{1 -->
-
-Focus on [Universal pragmatic core](#Universal-pragmatic-core) and you will be able to:
-* confidently build well-structured ~2k LOC apps (dive into software design to scale to 10k+ LOC)
-* confidently move to any further (more specialized) direction of your choice
-
-Info: most universally, you can build your architectures in Haskell with (growing complexity):
-1. Pure functions + ADTs + Simple monads (Maybe, IO)
-2. Monad stacks, with RWS-group and ExceptT being the most frequently used transformers
-3. *Not as universal, but still widely used:* Free monadic DSLs + GADTs
-
-Advice for learning language:
-* Category theory is not needed (nor does it help too much) to program in Haskell
-* Focusing on HOW TO USE complex patterns (monads/functors/lens/etc.) is often more beneficial than focusing on THEIR INTERNALS
-
-Advice for learning tooling:
-1. Stay as long as possible in plain ghci (ignore tutorials that require 3rd-party libs)
-2. Try building/repling cabal/stack proj with no dependencies
-3. Try building/repling cabal/stack proj with simple dependencies
-4. Try building/repling cabal/stack proj with complex dependencies like GUI libs (may be non-trivial, especially on Windows)
-
-<!-- __________________________________________________________________________/ }}}1 -->
 
