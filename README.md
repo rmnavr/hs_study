@@ -14,19 +14,17 @@ Collections of materials for learning Haskell.
 
 # Coding
 
-* [Haskell Cheetsheets](https://github.com/rmnavr/hs_study/blob/main/chsheet/README.md) — well-curated materials on language usage
-* [Realistic Haskell apps examples](https://github.com/rmnavr/hs_study/blob/main/demo_code/README.md) — from 30 LOC demo-scripts to industry-level projects
-
-Code snippets, explanations, etc. which may be usefull, but which are not of cheetsheet-level quality:
-* [Incubator](https://github.com/rmnavr/hs_study/blob/main/incubator)
+* [Haskell Cheetsheets](https://github.com/rmnavr/hs_study/blob/main/chsheet/README.md) — well-curated cheetsheets on language usage
+* [Haskell apps examples](https://github.com/rmnavr/hs_study/blob/main/demo_code/README.md) — from 30 LOC demo-scripts to industry-level projects
+* [Incubator](https://github.com/rmnavr/hs_study/blob/main/incubator) — code snippets/explanations/etc. which are not of cheetsheet-level quality yet (but still usefull)
 
 # Yapping
 
 * [My reasons to learn/use Haskell](https://github.com/rmnavr/hs_study/blob/main/materials/why_hs.md)
 * [Takeaways from yapping articles](https://github.com/rmnavr/hs_study/blob/main/materials/articles_consp.md)
-* [Links to yappings articles on Haskell (philosophy, strength and weaknesses, etc.)](https://github.com/rmnavr/hs_study/blob/main/materials/_yapping_articles.md)
 
-# Links to outer sources
+# Outer sources
 
 * [Links to learning materials (with comments)](https://github.com/rmnavr/hs_study/blob/main/materials/_learning_materials.md)
+* [Links to yappings articles on Haskell (philosophy, strength and weaknesses, etc.)](https://github.com/rmnavr/hs_study/blob/main/materials/_yapping_articles.md)
 
