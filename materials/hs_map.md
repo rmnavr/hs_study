@@ -115,9 +115,9 @@ Free monadic DSLs (effect systems):
 * Hierarchical Free Monads (opinionated choice)
 
 Effect systems (choose the one you like more):
-* `language core` RWS monad for simple apps 
-* `language core` mtl-style 
-* capabilities pattern (storing effects in ReaderT)
+* RWS monad for simple apps (part of the language core)
+* mtl-style (part of the language core)
+* DI via ReaderT
 * `lib` polysemy
 * `lib` capabilities
 * `lib` fused effects

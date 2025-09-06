@@ -13,4 +13,5 @@ Browse modules contents:
 * [Prelude](https://github.com/rmnavr/hs_study/blob/main/chsheet/browse_Prelude.hs)
 * [Functor/Applicative/Monad — how they are implemented in GHC, plus theory on their laws](https://github.com/rmnavr/hs_study/blob/main/chsheet/browse_Monads.hs)
 * [Reader/Writer/State and RWS monads](https://github.com/rmnavr/hs_study/blob/main/chsheet/browse_RWS.hs)
+* [Free monad](https://github.com/rmnavr/hs_study/blob/main/chsheet/browse_Free.hs)
 
