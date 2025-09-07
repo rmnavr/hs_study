@@ -1,6 +1,7 @@
 
 # Haskell bird-view map
 <!-- Intro ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾\ {{{1 -->
+
 This Haskell map structures all the different haskell-related topics.
 It should give you good bird-view picture on Haskell and it's tooling.
 
@@ -54,7 +55,8 @@ Compilation topics:
 
 ## Universal pragmatic core
 
-Below are the most general-purpose and pragmatic haskell topics you absolutely need and cannot avoid.
+> Below are the most general-purpose and pragmatic
+> haskell topics you absolutely need and cannot avoid.
 
 Basic principles (in FP and in Haskell in particular):
 * purity, side-effects
@@ -79,20 +81,21 @@ Basic Syntax:
 Typing:
 * Prelude basics: Eq, Show, Int/Float/String, ...
 * Typeclasses
-* ADTs, record syntax
-* GADTs
+* Records
+* ADTs
+> Main keywords: data, type, class, newtype
 
 Monads:
 * Functor, Applicative, Monad
-* Monads Zoo: IO, List, Maybe, Either, RWS
-* Transformers (transformers/mtl libs approaches)
+* Monads Zoo: IO, Maybe, Either, RWS, List
+* Transformers (transformers and mtl approaches)
 
 <!-- __________________________________________________________________________/ }}}1 -->
 <!-- Language core+ ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾\ {{{1 -->
 
 ## Other Pragmatic topics
 
-Below are widely used, but little bit less universal haskell topics.
+> Below are widely used, but little bit less universal haskell topics.
 
 Monoids:
 * Monoid, Semigroup
@@ -100,62 +103,54 @@ Monoids:
 * Lens
 
 Modern practices:
-* Basic language extensions (that are more like convenience-aimed rather than language-changing)
-* Text vs String vs ByteString
+* Frequently used language extensions
+* String vs Text vs ByteText
 
 Typing:
-* Type families
-* Higher kinded types
-* Rank N types
-* Datakinds
-
-Free monadic DSLs (effect systems):
-* Free monads, Church-encoded Monads
-* Final Tagless (somewhat industry-standard)
-* Hierarchical Free Monads (opinionated choice)
-
-Effect systems (choose the one you like more):
-* RWS monad for simple apps (part of the language core)
-* mtl-style (part of the language core)
-* DI via ReaderT
-* `lib` polysemy
-* `lib` capabilities
-* `lib` fused effects
+* GADTs
 
 <!-- __________________________________________________________________________/ }}}1 -->
 <!-- Language widening ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾\ {{{1 -->
 
 ## Specialized, Experimental, Esoteric
 
-Topics below should widen your Haskell toolbelt, although you can live without most of them.
-Those topics are not all necessarily advanced.
+> Topics below should widen your Haskell toolbelt,
+> although you can live without most of them (unless your domain specifically requires them).
+> Those topics are not all necessarily advanced.
+
+General software design topics:
+* Interop (FFI)
+* Async (STM Monad)
+
+Extensions, metaprogramming:
+* Language extensions (non-basic)
+* Template haskell (quasiquoting)
 
 Somewhat general purpose patterns:
 * Alternative, MonadPlus
-* Lazy, Operational, STM
+* Lazy, Operational
 
-Effects systems, algebraic effects libs:
-* Fused effects, Freer, Extensible-effect, effectful, polysemy
+Composition techniques:
+* Exotic pointfree notations
+* Continuation passing style (Cont)
+* Parser combinators
+
+Advanced typing (I):
+* Type families
+* Higher kinded types
+* Rank N types
+* Datakinds
+
+Advanced typing (II):
+* Generics
+* Linear, Phantom, Existential, Promoted
+* Dependent, Refinement types (liquid haskell)
 
 Highly situational (and maybe even esoteric):
 * Comonad, Arrow
 * Profunctor
 * Yoneda, Coyoneda
 * Free Monoid
-
-Composition techniques:
-* Parser combinators
-* Cont
-* Some exotic pointfree notations
-
-Advanced typing:
-* Generics
-* Linear, Phantom, Existential, Promoted
-* Dependent, Refinement types (liquid haskell)
-
-Extensions, metaprogramming:
-* Language extensions (non-basic)
-* Template haskell (quasiquoting)
 
 <!-- __________________________________________________________________________/ }}}1 -->
 
@@ -164,15 +159,32 @@ Extensions, metaprogramming:
 
 ## Software Design in Haskell
 
-Topics:
+Patterns for structuring app:
+* Basic
+  * Pure functions + ADTs
+  * RWS monad
+  * DI, Service handle, ReaderT
+  * Transformers (mtl-style)
+  * Final tagless
+* Free
+  * Free monads (DSL + interpreter), Church-encoded Monads
+  * Hierarchical Free Monads (nested DSLs)
+* Effect Systems
+  * freer, freer-simple, freer-effects
+  * extensible-effects
+  * capabilities
+  * polysemy
+  * fused effects
+
+Software design topics:
 * Testing
-* Errors, Logging
-* Concurency, Async (STM Monad)
-* Interop (FFI)
+* Logging
+* Proper error messaging
 * Performance, Profiling with ghc
 * Documentation (Haddoc)
 * Reprodusable building (cabal/stack, nix)
 * Publishing your proj/lib on hackage/stackage
+* Shipping your app
 
 <!-- __________________________________________________________________________/ }}}1 -->
 <!-- Architecture ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾\ {{{1 -->

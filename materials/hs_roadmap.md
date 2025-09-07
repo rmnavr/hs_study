@@ -5,7 +5,7 @@
 
 Complete these instructions ...
 1. Learn every topic on chapter [Universal pragmatic core](https://github.com/rmnavr/hs_study/blob/main/materials/hs_map.md#Universal-pragmatic-core) of *Haskell map*
-2. Explore the same *Haskell map* to become aware of topics you DON't require to learn (which are everything except Universal pragmatic core)
+2. Explore the same *Haskell map* to see which topics you DON't require to learn at the beginning (i.e. everything except Universal pragmatic core)
 3. Learn tooling by steps given below
 
 ... and you will be able to:
@@ -40,12 +40,25 @@ Main checkpoints are to build mini-apps (~300 LOC) with architectures based on:
    > Required topics:
    > - you'll need to understand **newtype** keyword
    > - RWS monads (understant that they wrap functions, not values)
-   > - see how to work with RWS-group, MaybeT and ExceptT transformers (also, with IO inside stack)
+   > - see how to work with RWS-group transformers, MaybeT and ExceptT transformers
+   > - pay attention on how to work with IO inside stack
    > - transformers lib approach to composition (lift)
-   > - mtl lib approach to composition (via typeclasses)
-3. *Not as universal, but still widely used*
-   **Free monadic DSLs + GADTs** (details/instructions `TODO`)
+   > - mtl lib approach to composition (typeclasses)
+3. **Free monad DSL** 
+   > The only required topic here (additional to previous steps) is Free monad itself.
 
 I strongly advice to learn usage of **lenses** somewhere after checkpoint 1 (I advice **microlens** library),
 however you don't necessarily need lenses to finish all 3 checkpoints.
+
+## What's next
+
+To continue in the direction of learning how to build Haskell apps, 
+consult with chapter [Software Design in Haskell](https://github.com/rmnavr/hs_study/blob/main/materials/hs_map.md#Software-Design-in-Haskell) of *Haskell map*.
+
+Some guidelines:
+* Both **Free monad** and **mtl** are not the most cutting-edge Haskell approaches (as of 2025)
+* Pay attention to approaches popular within community:
+  * DI, Service handle, ReaderT
+  * Final tagless
+* As for other patterns (free, effects) there is no universal consensus of which is the best
 

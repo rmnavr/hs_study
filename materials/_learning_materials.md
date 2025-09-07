@@ -67,6 +67,7 @@
 * `youtube` [[→ Writing a simple interpreter]](https://www.youtube.com/watch?v=lDWTNVfsvbk)
 * `article` [[→ Lenses usage example]](https://github.com/michaelt/lens-simple/blob/master/examples/Pong.hs)
 * `article` [[→ 99 problems in Haskell]](https://wiki.haskell.org/index.php?title=H-99:_Ninety-Nine_Haskell_Problems)
+* [[→ State of Haskell ecosystem]](https://github.com/Gabriella439/post-rfc/blob/main/sotu.md)
 
 
 <!-- __________________________________________________________________________/ }}}1 -->
