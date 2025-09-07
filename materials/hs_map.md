@@ -193,18 +193,16 @@ Software design topics:
 
 FP approaches:
 * make illegal state irrepresentable
-* pure core imperative shell
+* pure core, imperative shell
+* 3-layered-cake
 
 Traditional architectures:
-* ReaderT for DI
-* 3-layered-cake
 * onion, ports and adapters
 
 Architectures:
 * CQRS
 * Actor model
 * Event sourcing
-* Service handle
 * FRP
 * Elm architecture (MVU)
 
