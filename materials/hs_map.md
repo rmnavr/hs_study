@@ -175,6 +175,8 @@ Patterns for structuring app:
   * capabilities
   * polysemy
   * fused effects
+* Less popular
+  * bluefin
 
 Software design topics:
 * Testing

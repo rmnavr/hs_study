@@ -74,6 +74,7 @@
         [1, 2, 3] ^? _init              -- Just [1, 2]
         [1, 2, 3] & _last %~ (*10)      -- [1, 2, 30]
 
+
     -- DEFINING LENS FOR RECORDS (BY HAND):
 
         data Person  = Person { name :: String, address :: String } deriving Show

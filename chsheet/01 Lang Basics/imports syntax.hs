@@ -11,5 +11,7 @@
 
     -- to add:
     -- 1) hiding
-    -- 2) ...
+    -- 2) Type(..)
+    -- 3) module where
+
 
