@@ -14,7 +14,7 @@ Collections of materials for learning Haskell.
 
 # Coding
 
-* [Haskell Cheetsheets](https://github.com/rmnavr/hs_study/blob/main/chsheet/README.md) — well-curated cheetsheets on language usage
+* [Haskell Cheetsheets](https://github.com/rmnavr/hs_study/blob/main/chsheets/) — well-organized materials on language usage
 * [Haskell apps examples](https://github.com/rmnavr/hs_study/blob/main/demo_code/README.md) — from 30 LOC demo-scripts to industry-level projects
 
 # Yapping
