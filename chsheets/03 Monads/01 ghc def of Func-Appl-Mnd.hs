@@ -68,7 +68,9 @@
         -- import Control.Monad (liftM, liftM2, liftM3, liftM4, liftM5, ap, (<=<), (>=>), join)   
         liftM  :: Monad m => (a -> b) -> m a -> m b
         liftM2 :: Monad m => (a -> b -> c) -> m a -> m b -> m c
-        liftA3 :: Monad m => (a -> b -> c -> d) -> m a -> m b -> m c -> m d
+        liftM3 :: Monad m => (a -> b -> c -> d) -> m a -> m b -> m c -> m d
+        -- liftM4
+        -- liftM5
         ap     :: Monad m => m (a -> b) -> m a -> m b
         join   :: Monad m => m (m a) -> m a
         (<=<)  :: Monad m => (b -> m c) -> (a -> m b) -> (a -> m c)

@@ -5,25 +5,26 @@ Collections of materials for learning Haskell.
 
 ---
 
-# Systematic
+# Roadmaps
 
-* [Haskell map (bird-view)](https://github.com/rmnavr/hs_study/blob/main/materials/hs_map.md) —
+* [Haskell map (bird-view)](materials/hs_map.md) —
   systematic picture of how every Haskell topic connects to the rest of the language (pragmatic and esoteric things are explicitly separated)
-* [Haskell roadmap to writing small-to-medium general-purpose apps](https://github.com/rmnavr/hs_study/blob/main/materials/hs_roadmap.md) —
+* [Haskell roadmap to writing small-to-medium general-purpose apps](materials/hs_roadmap.md) —
   clearly outlines what you should learn first, what should be skipped and what are the main checkpoints
 
 # Coding
 
-* [Haskell Cheetsheets](https://github.com/rmnavr/hs_study/blob/main/chsheets/) — well-organized materials on language usage
-* [Haskell apps examples](https://github.com/rmnavr/hs_study/blob/main/demo_code/README.md) — from 30 LOC demo-scripts to industry-level projects
+* [Haskell Cheetsheets](chsheets/) — well-organized materials on language usage
+* [Haskell apps examples](demo_code/README.md) — from 30 LOC demo-scripts to industry-level projects
 
 # Yapping
 
-* [My reasons to learn/use Haskell](https://github.com/rmnavr/hs_study/blob/main/materials/why_hs.md)
-* [Takeaways from yapping articles](https://github.com/rmnavr/hs_study/blob/main/materials/articles_consp.md)
+* [My reasons to learn/use Haskell](materials/why_hs.md)
+* [Takeaways from yapping articles](materials/articles_consp.md)
+* [Links to yappings articles on Haskell (philosophy, strength and weaknesses, etc.)](materials/_yapping_articles.md)
 
 # Outer sources
 
-* [Links to learning materials (with comments)](https://github.com/rmnavr/hs_study/blob/main/materials/_learning_materials.md)
-* [Links to yappings articles on Haskell (philosophy, strength and weaknesses, etc.)](https://github.com/rmnavr/hs_study/blob/main/materials/_yapping_articles.md)
+* [Links to learning materials (with comments)](materials/_learning_materials.md)
+* [Usefull haskell libs](materials/hs_libs.md)
 

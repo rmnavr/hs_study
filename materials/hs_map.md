@@ -193,20 +193,26 @@ Software design topics:
 
 ## Architecture in Haskell
 
-FP approaches:
+Most topics here are somewhat language-agnostic.
+
+SD principles:
+* KISS, DRY, Yagni
+* accidental vs essential complexity
+
+FP approaches/mantras:
 * make illegal state irrepresentable
 * pure core, imperative shell
 * 3-layered-cake
 
-Traditional architectures:
-* onion, ports and adapters
+FP-specific architectures:
+* Elm architecture (MVU) — popular in FP
+* FRP
 
-Architectures:
+General architectures:
+* Onion, Ports and adapters
 * CQRS
 * Actor model
 * Event sourcing
-* FRP
-* Elm architecture (MVU)
 
 <!-- __________________________________________________________________________/ }}}1 -->
 <!-- Math ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾\ {{{1 -->
@@ -218,7 +224,7 @@ If you are into those kind of things, dive into:
 * Cathegory theory 
 * Hindley-Milner typing
 
-Although be aware, that knowing all of it will not directly make you better haskeller.
+> Although be aware, that knowing all of it will not directly make you better haskell programmer.
 
 <!-- __________________________________________________________________________/ }}}1 -->
 <!-- Domains ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾\ {{{1 -->
