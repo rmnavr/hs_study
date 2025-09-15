@@ -1,7 +1,7 @@
 
     -- https://gotchamana.github.io/wiwinwlh/#language-extensions
 
--- Usage ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾\ {{{1
+-- How to enable extensions ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾\ {{{1
 
     -- extensions can be given in the code:
     {-# LANGUAGE LambdaCase #-}
@@ -11,6 +11,7 @@
 
 -- ____________________________________________________________________________/ }}}1
 
+    -- default in GHCI:
 -- ExtendedDefaultRules [default in GHCI] ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾\ {{{1
 
     {-# LANGUAGE ExtendedDefaultRules #-}
@@ -31,6 +32,7 @@
 
 -- ____________________________________________________________________________/ }}}1
 
+    -- smth like syntax sugering:
 -- Lambda Case ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾\ {{{1
 
     {-# LANGUAGE LambdaCase #-}
@@ -83,6 +85,7 @@
 
 -- ____________________________________________________________________________/ }}}1
 
+    -- derivers:
 -- DeriveFunctor ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾\ {{{1
 
     {-# LANGUAGE DeriveFunctor #-}
@@ -97,6 +100,27 @@
 
 -- ____________________________________________________________________________/ }}}1
 
+    -- Typing:
+-- MultiParamTypeClasses ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾\ {{{1
+
+    {-# LANGUAGE MultiParamTypeClasses #-}
+
+    -- makes this possible:
+    class Convertible a b where
+        convert :: a -> b
+
+-- ____________________________________________________________________________/ }}}1
+-- FunctionalDependencies ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾\ {{{1
+
+    {-# LANGUAGE MultiParamTypeClasses, FunctionalDependencies #-}
+
+    class Convertible a b | a -> b where
+        convert :: a -> b
+
+    -- "| a -> b" means "a uniquely determines b"
+
+-- ____________________________________________________________________________/ }}}1
+    --
 -- TypeSynonymInstances ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾\ {{{1
 
     {-# LANGUAGE TypeSynonymInstances #-}
@@ -113,6 +137,28 @@
     -- With it GHC will do this for us automatically.
     -- Type synonyms still need to be fully applied
     -- instance MyClass IntList
+
+-- ____________________________________________________________________________/ }}}1
+-- FlexibleInstances ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾\ {{{1
+
+    {-# LANGUAGE FlexibleInstances #-}
+
+    -- [1] usage instead of OverlappingInstances
+
+        class C a where
+            c :: a -> String
+
+        instance {-# OVERLAPPABLE #-} C [a] where
+            c _ = "generic list"
+
+        instance {-# OVERLAPPING  #-} C [Char] where
+            c _ = "string"
+
+    -- [2]
+
+        -- following now becomes possible:
+        instance MyClass (Maybe a) where ...
+
 
 -- ____________________________________________________________________________/ }}}1
 -- FlexibleContexts ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾\ {{{1
@@ -140,15 +186,6 @@
         -- instance (MyClass (Maybe a)) => MyClass (Either a b)
 
 -- ____________________________________________________________________________/ }}}1
--- MultiParamTypeClasses ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾\ {{{1
-
-    {-# LANGUAGE MultiParamTypeClasses #-}
-
-    -- makes this possible:
-    class Convertible a b where
-        convert :: a -> b
-
--- ____________________________________________________________________________/ }}}1
 -- OverlappingInstances (not recommended, use FlexibleInstances instead) ‾‾‾‾‾‾\ {{{1
 
     {-# LANGUAGE OverlappingInstances #-}
@@ -160,28 +197,6 @@
 
 
 -- ____________________________________________________________________________/ }}}1
--- FlexibleInstances ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾\ {{{1
-
-    {-# LANGUAGE FlexibleInstances #-}
-
-    -- [1] usage instead of OverlappingInstances
-
-        class C a where
-            c :: a -> String
-
-        instance {-# OVERLAPPABLE #-} C [a] where
-            c _ = "generic list"
-
-        instance {-# OVERLAPPING  #-} C [Char] where
-            c _ = "string"
-
-    -- [2]
-
-        -- following now becomes possible:
-        instance MyClass (Maybe a) where ...
-
-
--- ____________________________________________________________________________/ }}}1
 -- UndecidableInstances ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾\ {{{1
 
     {-# LANGUAGE UndecidableInstances #-}
@@ -189,17 +204,7 @@
     ...
 
 -- ____________________________________________________________________________/ }}}1
--- FunctionalDependencies ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾\ {{{1
-
-    {-# LANGUAGE MultiParamTypeClasses, FunctionalDependencies #-}
-
-    class Convertible a b | a -> b where
-        convert :: a -> b
-
-    -- "| a -> b" means "a uniquely determines b"
-
--- ____________________________________________________________________________/ }}}1
-
+    --
 -- GADTs ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾\ {{{1
 
     {-# LANGUAGE GADTs #-}
@@ -221,3 +226,8 @@
 
 -- ____________________________________________________________________________/ }}}1
 
+
+
+
+    -- TODO:
+	-- {-# LANGUAGE RoleAnnotations #-}

@@ -21,10 +21,10 @@ Collections of materials for learning Haskell.
 
 * [My reasons to learn/use Haskell](materials/why_hs.md)
 * [Takeaways from yapping articles](materials/articles_consp.md)
-* [Links to yappings articles on Haskell (philosophy, strength and weaknesses, etc.)](materials/_yapping_articles.md)
 
-# Outer sources
+# Collections of materials
 
 * [Links to learning materials (with comments)](materials/_learning_materials.md)
-* [Usefull haskell libs](materials/hs_libs.md)
+* [Links to yappings articles on Haskell (philosophy, strength and weaknesses, etc.)](materials/_yapping_articles.md)
+* [List of usefull haskell libs](materials/hs_libs.md)
 

@@ -75,15 +75,14 @@ Basic Syntax:
 * as-pattern (@), cons operator (:)
 * list comprehensions
 * do blocks
-* typing keywords: data, type, newtype, class, instance
-* imports syntax (as, qualified, hiding)
+* main typing keywords: data, type, newtype, class, instance
+* imports syntax (module, as, qualified, hiding)
 
 Typing:
 * Prelude basics: Eq, Show, Int/Float/String, ...
 * Typeclasses
-* Records
 * ADTs
-> Main keywords: data, type, class, newtype
+* Records, Newtype
 
 Monads:
 * Functor, Applicative, Monad
@@ -196,7 +195,7 @@ Software design topics:
 Most topics here are somewhat language-agnostic.
 
 SD principles:
-* KISS, DRY, Yagni
+* KISS, DRY, YAGNI
 * accidental vs essential complexity
 
 FP approaches/mantras:
@@ -231,11 +230,18 @@ If you are into those kind of things, dive into:
 
 ## Domains
 
+Topics:
 * Frontend (JS/HTML)
 * GUI
 * DS
-* Writing/parsing languages
 * ...
+
+Methods of writing DSLs:
+* Simply via functions
+* ADTs
+* GADTs
+* Final tagless
+* Free
 
 <!-- __________________________________________________________________________/ }}}1 -->
 
